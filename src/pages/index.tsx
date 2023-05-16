@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+import MainNavbar from "@/components/MainNavbar";
 import Head from "next/head";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Button>Hello Ben</Button>
+        <MainNavbar />
       </main>
     </>
   );
