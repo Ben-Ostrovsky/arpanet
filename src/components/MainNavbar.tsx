@@ -1,4 +1,4 @@
-import { Navbar } from "@nextui-org/react";
+import { Button, Navbar } from "@nextui-org/react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -6,18 +6,37 @@ export default function MainNavbar() {
   const router = useRouter();
   return (
     <Navbar isBordered variant={"floating"}>
-      <Navbar.Content>
+      <Navbar.Brand />
+      <Navbar.Content
+        enableCursorHighlight
+        activeColor={"primary"}
+        variant={"underline"}
+      >
         <Link href={"/"} passHref legacyBehavior>
-          <Navbar.Link isActive={router.pathname == "/"}>
-            Ben Ostrovsky (home)
+          <Navbar.Link isActive={router.pathname == "/"}>Home</Navbar.Link>
+        </Link>
+        <Link href={"/historicalContext"} passHref legacyBehavior>
+          <Navbar.Link isActive={router.pathname == "/historicalContext"}>
+            Historical Context
           </Navbar.Link>
         </Link>
-        <Link href={"/hello"} passHref legacyBehavior>
-          <Navbar.Link isActive={router.pathname == "/hello"}>
-            Benjamin Telanoff (hello)
+        <Link href={"/economy"} passHref legacyBehavior>
+          <Navbar.Link isActive={router.pathname == "/economy"}>
+            Economy
+          </Navbar.Link>
+        </Link>
+        <Link href={"/spread"} passHref legacyBehavior>
+          <Navbar.Link isActive={router.pathname == "/spread"}>
+            Spread of Information
+          </Navbar.Link>
+        </Link>
+        <Link href={"/tech"} passHref legacyBehavior>
+          <Navbar.Link isActive={router.pathname == "/tech"}>
+            Technological Advance
           </Navbar.Link>
         </Link>
       </Navbar.Content>
+      <Navbar.Brand />
     </Navbar>
   );
 }
