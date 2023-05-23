@@ -31,8 +31,8 @@ export default function MainNavbar() {
           </Navbar.Link>
         </Link>
         <Link href={"/tech"} passHref legacyBehavior>
-          <Navbar.Link isActive={router.pathname == "/tech"}>
-            Technological Advance
+          <Navbar.Link isActive={router.pathname == "/militaryEdge"}>
+            Military Edge
           </Navbar.Link>
         </Link>
       </Navbar.Content>

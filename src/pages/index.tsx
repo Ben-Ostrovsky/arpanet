@@ -1,6 +1,6 @@
 import MainNavbar from "@/components/MainNavbar";
 import Head from "next/head";
-
+import { Button, Text, Spacer, Container, Row, Image } from "@nextui-org/react";
 export default function Home() {
   return (
     <>
@@ -12,6 +12,38 @@ export default function Home() {
       </Head>
       <main>
         <MainNavbar />
+        <Spacer y={1} />
+        <Container>
+        <Row justify="center" align="center">
+              <Image
+                width={400}
+                height={180}  
+                src="https://chrisabraham.com/images/https___bucketeere05bbc84baa3437e9518adb32be77984.s3.amazonaws.com_public_images_09dba615bddf450390c0f96701c2eaa1_919x440.png/@@images/4266c746-fe16-4f51-b69b-fbf3991f1238.png"
+                alt="Default Image"
+                objectFit="cover"
+              />
+        </Row>
+        <Row justify="center" align="center">
+              <Text size="$xl" align="center">
+                {
+                  "The U.S. Advanced Research Projects Agency Network (ARPANET) was the first public packet-switched computer network. It was first used in 1969 and finally decommissioned in 1989. ARPANET's main use was for academic and research purposes."
+                }
+              </Text>
+              </Row>
+
+              <Spacer y={1} />
+              <Row justify="center" align="center">
+              <Image
+                width={400}
+                height={300}  
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.explicit.bing.net%2Fth%3Fid%3DOIP.CbqBO4biQPHdtUa21D0taQHaFE%26pid%3DApi&f=1&ipt=ba447fb4b5cd916c8020ec4ecc40792d609603308cb24815ebf0f18c3985b17d&ipo=images"
+                alt="Default Image"
+                objectFit="cover"
+              />
+              {/* <Button justify = "center " color="warning"  rounded >"Hello There"</Button> */}
+              </Row>
+              </Container>
+
       </main>
     </>
   );
