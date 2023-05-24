@@ -1,4 +1,4 @@
-import { Button, Navbar, Switch } from "@nextui-org/react";
+import { Button, Navbar, Spacer, Switch } from "@nextui-org/react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import React from "react";
@@ -15,7 +15,9 @@ export default function MainNavbar() {
 
   return (
     <Navbar isBordered variant={"sticky"}>
-      <Navbar.Brand />
+      <Navbar.Brand>
+        <Button>Default Theme</Button>
+      </Navbar.Brand>
       <Navbar.Content
         enableCursorHighlight
         activeColor={"primary"}
@@ -46,7 +48,7 @@ export default function MainNavbar() {
         </Link>
       </Navbar.Content>
       <Navbar.Content>
-        <Button>Theme set to default for now</Button>
+        <Button>Github + Research?</Button>
       </Navbar.Content>
     </Navbar>
   );
