@@ -38,7 +38,7 @@ export default function Home() {
                 The ARPANET was built using packet-switching computers
                 interconnected by leased lines.
               </Text>
-              <Spacer y={3} />
+              <Spacer y={1.5} />
               <Image
                 src={
                   "https://d26toa8f6ahusa.cloudfront.net/wp-content/uploads/2019/09/24135714/U-Archives-D-Computer-Science-16x9.jpg"
@@ -46,7 +46,7 @@ export default function Home() {
                 objectFit="revert"
                 alt="Default Image"
                 width={500}
-                height={800}
+                height={372}
               />
             </Col>
           </Grid>
@@ -57,7 +57,7 @@ export default function Home() {
               }
               objectFit="cover"
               width={600}
-              height={600}
+              height={500}
             />
           </Grid>
         </Row>
