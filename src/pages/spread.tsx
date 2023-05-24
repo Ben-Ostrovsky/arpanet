@@ -15,6 +15,7 @@ export default function About() {
   return (
     <div>
       <Container>
+        <Row justify="center" align = "center"><Text color = "#75ff4e" h1>Spread of Information</Text></Row>
         <Text>
           "The internet is (almost) everywhere. We rely on it when we want to
           buy a new phone or a computer and use it when we need help with
@@ -25,7 +26,7 @@ export default function About() {
           a scientist who wanted to improve communication between computers and
           humans and how they exchange data."
         </Text>
-        <Row>
+        <Row justify="center" align="center">
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
               <Text b>ARPA Network, Grographic Map(1973)</Text>
