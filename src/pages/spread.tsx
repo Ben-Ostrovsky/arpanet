@@ -10,8 +10,10 @@ import {
   Image,
   Spacer,
 } from "@nextui-org/react";
+import React from 'react'
 export default function About() {
   const { setVisible, bindings } = useModal();
+  const { setVisible: setVisible2, bindings: bindings2 } = useModal();
   return (
     <div>
       <Container>
@@ -35,7 +37,7 @@ export default function About() {
             <Card.Body css={{ py: "$10" }}>
               <Image
                 width={200}
-                height={100}
+                height={200}
                 src="http://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/7032016/ARPANET.jpg?1477749691"
               />
             </Card.Body>
@@ -54,7 +56,7 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="modal-title" size={18}>
-                      ARPA Network Grographic Map
+                      ARPA Network, Grographic Map
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
@@ -80,25 +82,25 @@ export default function About() {
             <Card.Body css={{ py: "$10" }}>
               <Image
                 width={200}
-                height={100}
+                height={200}
                 src="https://thisdayintechhistory.com/wp-content/uploads/2012/11/arpanet80.gif"
               />
             </Card.Body>
             <Card.Divider />
             <Card.Footer>
               <Row justify="center" align="center">
-                <Button size="sm" light onPress={() => setVisible(true)}>
+                <Button size="sm" light onPress={() => setVisible2(true)}>
                   Expand
                 </Button>
                 <Modal
                   scroll
                   width="600px"
-                  aria-labelledby="modal-title"
-                  aria-describedby="modal-description"
-                  {...bindings}
+                  aria-labelledby="n"
+                  aria-describedby="d"
+                  {...bindings2}
                 >
                   <Modal.Header>
-                    <Text id="modal-title" size={18}>
+                    <Text id="n" size={18}>
                       ARPANET GEOGRAPHIC MAP
                     </Text>
                   </Modal.Header>
@@ -108,7 +110,7 @@ export default function About() {
                       height={300}
                       src="https://thisdayintechhistory.com/wp-content/uploads/2012/11/arpanet80.gif"
                     />
-                    <Text id="modal-description">
+                    <Text id="d">
                       This shows how Arpanet influenced the marketplace as it
                       served as an entryway into the booming business of
                       ecommerce.
