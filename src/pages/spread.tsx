@@ -64,9 +64,7 @@ export default function About() {
                       src="http://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/7032016/ARPANET.jpg?1477749691"
                     />
                     <Text id="modal-description">
-                      This shows how Arpanet influenced the marketplace as it
-                      served as an entryway into the booming business of
-                      ecommerce.
+                      tetst
                     </Text>
                   </Modal.Body>
                 </Modal>
