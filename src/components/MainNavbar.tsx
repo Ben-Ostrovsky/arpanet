@@ -14,10 +14,8 @@ export default function MainNavbar() {
   );
 
   return (
-    <Navbar isBordered variant={"sticky"}>
-      <Navbar.Brand>
-        <Button>Default Theme</Button>
-      </Navbar.Brand>
+    <Navbar>
+      <Navbar.Brand></Navbar.Brand>
       <Navbar.Content
         enableCursorHighlight
         activeColor={"primary"}
@@ -47,9 +45,7 @@ export default function MainNavbar() {
           </Navbar.Link>
         </Link>
       </Navbar.Content>
-      <Navbar.Content>
-        <Button>Github + Research?</Button>
-      </Navbar.Content>
+      <Navbar.Brand />
     </Navbar>
   );
 }

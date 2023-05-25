@@ -1,67 +1,98 @@
-import Head from "next/head";
+import MainNavbar from "@/components/MainNavbar";
 import {
   Button,
-  Text,
-  Spacer,
-  Container,
-  Row,
-  Image,
-  Grid,
+  Card,
   Col,
+  Container,
+  Grid,
+  Row,
+  Spacer,
+  Text,
 } from "@nextui-org/react";
-export default function Home() {
+
+const isBrowser = () => typeof window !== "undefined"; //The approach recommended by Next.js
+
+function scrollDown() {
+  if (!isBrowser()) return;
+  window.scrollTo({ top: 960, behavior: "smooth" });
+}
+
+export default function About() {
   return (
     <div>
-      <Spacer />
-      <Row justify="center">
-        <Text
-          h1
-          css={{
-            textGradient: "150deg, #63a4ff 0%, #83eaf1 180%",
-          }}
+      <Grid.Container
+        justify="center"
+        css={{
+          height: "91vh",
+          backgroundImage:
+            "url(https://cdnb.artstation.com/p/assets/images/images/045/436/379/large/pelinsuarici-2.jpg?1642704559)",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100%",
+        }}
+      >
+        <Container
+          fluid
+          css={{ backdropFilter: "blur(10px) brightness(90%)" }}
+          justify="center"
         >
-          {"Advanced Research Projects Agency Network (ARPANET)"}
-        </Text>
-        <Spacer y={5} />
-      </Row>
-      <Grid.Container gap={1} justify="center">
-        <Row>
           <Grid>
-            <Col>
-              <Text h5>
-                The Advanced Research Projects Agency Network (ARPANET), the
-                forerunner of the Internet, was a pioneering long-haul network
-                funded by the U.S. Department of Defense’s Advanced Research
-                Projects Agency (ARPA). It served as the test bed for many areas
-                of internetworking technology development and testing, and acted
-                as the central backbone during the development of the Internet.
-                The ARPANET was built using packet-switching computers
-                interconnected by leased lines.
+            <Col css={{ width: "100%", textAlign: "center" }}>
+              <Spacer y={6} />
+              <Text color={"white"} h1 weight={"bold"} size={70}>
+                {"Advanced Research"}
               </Text>
-              <Spacer y={1.5} />
-              <Image
-                src={
-                  "https://d26toa8f6ahusa.cloudfront.net/wp-content/uploads/2019/09/24135714/U-Archives-D-Computer-Science-16x9.jpg"
-                }
-                objectFit="revert"
-                alt="Default Image"
-                width={500}
-                height={372}
-              />
+              <Text color={"white"} h1 weight={"bold"} size={70}>
+                {"Projects Agency Network"}
+              </Text>
+              <Text color={"white"} h1 weight={"black"} size={70}>
+                {"(ARPANET)"}
+              </Text>
+              <Spacer y={6} />
             </Col>
           </Grid>
-          <Grid>
-            <Image
-              src={
-                "https://brewminate.com/wp-content/uploads/2019/03/031219-76-History-Internet-Technology.jpg"
-              }
-              objectFit="cover"
-              width={600}
-              height={500}
-            />
-          </Grid>
-        </Row>
+          <Row justify="center">
+            <Button
+              borderWeight={"bold"}
+              auto
+              ghost
+              rounded
+              size={"xl"}
+              color="success"
+              onClick={scrollDown}
+            >
+              {"▼"}
+            </Button>
+          </Row>
+        </Container>
       </Grid.Container>
+      <Spacer y={3} />
+
+      <Grid.Container gap={2} justify="center">
+        <Grid>
+          <Card css={{ mw: "400px" }}>
+            <Card.Body>
+              <Text>
+                {
+                  "Benjamin Telanoff once said that The Advanced Research Projects Agency Network (ARPANET), the forerunner of the Internet, was a pioneering long-haul network funded by the U.S. Department of Defense’s Advanced Research Projects Agency (ARPA). It served as the test bed for many areas of internetworking technology development and testing, and acted as the central backbone during the development of the Internet. The ARPANET was built using packet-switching computers interconnected by leased lines."
+                }
+              </Text>
+            </Card.Body>
+          </Card>
+        </Grid>
+        <Grid>
+          <Card css={{ mw: "400px" }}>
+            <Card.Body>
+              <Text>
+                {
+                  "Benjamin Ostrovsky aslo once thought that The Advanced Research Projects Agency Network (ARPANET), the forerunner of the Internet, was a pioneering long-haul network funded by the U.S. Department of Defense’s Advanced Research Projects Agency (ARPA). It served as the test bed for many areas of internetworking technology development and testing, and acted as the central backbone during the development of the Internet. The ARPANET was built using packet-switching computers interconnected by leased lines."
+                }
+              </Text>
+            </Card.Body>
+          </Card>
+        </Grid>
+      </Grid.Container>
+      <Spacer y={50} />
     </div>
   );
 }
