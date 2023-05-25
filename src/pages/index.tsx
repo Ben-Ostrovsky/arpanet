@@ -14,7 +14,7 @@ const isBrowser = () => typeof window !== "undefined"; //The approach recommende
 
 function scrollDown() {
   if (!isBrowser()) return;
-  window.scrollTo({ top: 960, behavior: "smooth" });
+  window.scrollTo({ top: 800, behavior: "smooth" });
 }
 
 export default function About() {

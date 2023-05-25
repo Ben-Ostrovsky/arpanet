@@ -11,6 +11,7 @@ import {
   Spacer,
 } from "@nextui-org/react";
 import React from "react";
+
 export default function About() {
   const { setVisible, bindings } = useModal();
   const { setVisible: setVisible2, bindings: bindings2 } = useModal();
@@ -67,7 +68,7 @@ export default function About() {
                     <Image
                       width={400}
                       height={300}
-                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.C32J8yXs2ZPDaby2X1L-OAHaEt%26pid%3DApi&f=1&ipt=1dcae55955baeadf4f7c0c3d3f10a58108e719266c81d96f75804fc4780e7834&ipo=images"
+                      src="https://static.giggster.com/images/location/6f9c6e07-ecd6-4d9a-9d01-3e6840a93208/5450610d-c1af-436a-8844-3670f4df2ce6/full_hd_retina.jpeg"
                     />
                     <Text id="modal-description">tetst</Text>
                   </Modal.Body>
