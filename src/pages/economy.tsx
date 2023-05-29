@@ -38,7 +38,7 @@ export default function About() {
               <Image
                 width={200}
                 height={200}
-                src="https://www.agileinfoways.com/blog/blog/how-ecommerce-industry-got-its-existence/"
+                src = "https://www.agileinfoways.com/wp-content/uploads/2018/02/The-Evolution-of-E-Commerce-Industry-in-the-Last-few-Years.jpg"
               />
             </Card.Body>
             <Card.Divider />
@@ -63,8 +63,8 @@ export default function About() {
                     <Image
                       width={400}
                       height={300}
-                      src="https://www.agileinfoways.com/blog/blog/how-ecommerce-industry-got-its-existence/"
-                    />
+                      src = "https://www.agileinfoways.com/wp-content/uploads/2018/02/The-Evolution-of-E-Commerce-Industry-in-the-Last-few-Years.jpg"
+                      />
                     <Text id="modal-description">
                       tetst
                     </Text>
