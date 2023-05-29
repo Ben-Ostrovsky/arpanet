@@ -13,7 +13,9 @@ import {
 import React from 'react'
 export default function About() {
   const { setVisible, bindings } = useModal();
-  const { setVisible: setVisible2, bindings: bindings2 } = useModal();
+  const { setVisible: setVisible2, bindings: bindings2} = useModal();
+  const { setVisible: setVisible3, bindings: bindings3 } = useModal();
+  const { setVisible: setVisible4, bindings: bindings4 } = useModal();
   return (
     <div>
       <Container>
@@ -73,7 +75,7 @@ export default function About() {
               </Row>
             </Card.Footer>
           </Card>
-          <Spacer y={1} />
+          <Spacer x={4} />
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
               <Text b>INTERNET ECONOMY GDP</Text>
@@ -119,7 +121,82 @@ export default function About() {
             </Card.Footer>
           </Card>
         </Row>
-        <Spacer y={0.5} />
+        <Spacer y={1} />
+        <Row justify="center" align="center">
+          <Card css={{ mw: "330px" }} variant="bordered">
+            <Card.Header>
+              <Text b>ARPANET MANAGEMENT STUDY</Text>
+            </Card.Header>
+            <Card.Divider />
+            <Card.Body css={{ py: "$10" }}>
+              <Text>"We recommend that the commercial packet switching industry be encouraged to provide the additional capacity that ARPA and new governmental applications will be seeking from this present ARPANET, rather than permit an open-ended expansion of the ARPANET communications network..” </Text>
+            </Card.Body>
+            <Card.Divider />
+            <Card.Footer>
+              <Row justify="center" align="center">
+                <Button size="sm" light onPress={() => setVisible3(true)}>
+                  Expand
+                </Button>
+                <Modal
+                  scroll
+                  width="600px"
+                  aria-labelledby="modal-title"
+                  aria-describedby="modal-description"
+                  {...bindings3}
+                >
+                  <Modal.Header>
+                    <Text id="modal-title" size={18}>
+                    (ARPANET MANAGEMENT STUDY(Paul Baran)(1974))
+                    </Text>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <Text>"We recommend that the commercial packet switching industry be encouraged to provide the additional capacity that ARPA and new governmental applications will be seeking from this present ARPANET..” </Text>
+                    <Text id="modal-description">
+                      Even in the earlier stages of ARPANET, Baran was already envisioning a wide-scale use of packet switching technology inluding its use in the commercial sector. This demonstrates the economical potential perceived and shows why this technology had introduced the idea of e-commerce.
+                    </Text>
+                  </Modal.Body>
+                </Modal>
+              </Row>
+            </Card.Footer>
+          </Card>
+          <Spacer x={4} />
+          <Card css={{ mw: "330px" }} variant="bordered">
+            <Card.Header>
+              <Text b>The Arpanet and Its Impact on the State of Networking</Text>
+            </Card.Header>
+            <Card.Divider />
+            <Card.Body css={{ py: "$10" }}>
+              <Text>"I like to argue that the Arpanet was the first of the shared economy systems, a system similar to Airbnb and Uber that used resources that were otherwise idle.”</Text>
+            </Card.Body>
+            <Card.Divider />
+            <Card.Footer>
+              <Row justify="center" align="center">
+                <Button size="sm" light onPress={() => setVisible4(true)}>
+                  Expand
+                </Button>
+                <Modal
+                  scroll
+                  width="600px"
+                  aria-labelledby="n"
+                  aria-describedby="d"
+                  {...bindings4}
+                >
+                  <Modal.Header>
+                    <Text id="n" size={18}>
+                      (Leonard Kleinrock(2019))
+                    </Text>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <Text>"I like to argue that the Arpanet was the first of the shared economy systems, a system similar to Airbnb and Uber that used resources that were otherwise idle.”</Text>
+                    <Text id="d">
+                    According to the claim, the ARPANET was a model of the shared economy before Airbnb and Uber, where unused resources were used wisely. This highlights the economic contribution of the ARPANET by pioneering the idea of resource-sharing and developing a platform for optimum resource usage, resulting in financial gains and improvements in efficiency.
+                    </Text>
+                  </Modal.Body>
+                </Modal>
+              </Row>
+            </Card.Footer>
+          </Card>
+        </Row>
       </Container>
     </div>
   );
