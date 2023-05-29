@@ -31,7 +31,7 @@ export default function About() {
         <Row justify="center" align="center">
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
-              <Text b>ARPA Network, Grographic Map(1973)</Text>
+              <Text b>Geographic Map</Text>
             </Card.Header>
             <Card.Divider />
             <Card.Body css={{ py: "$10" }}>
@@ -56,7 +56,7 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="modal-title" size={18}>
-                      ARPA Network, Grographic Map
+                      (ARPA Network, Grographic Map(1973))
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
@@ -66,7 +66,7 @@ export default function About() {
                       src="http://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/7032016/ARPANET.jpg?1477749691"
                     />
                     <Text id="modal-description">
-                      tetst
+                    This image visually depicts the expansive network of interconnected ARPANET nodes, which facilitated the spread of information. This map showcases how it cretaed a efficient communication infrastructure which led to the rapid exchange of data and knowledge among diverse institutions and contributing to the acceleration of information dissemination.
                     </Text>
                   </Modal.Body>
                 </Modal>
@@ -76,7 +76,7 @@ export default function About() {
           <Spacer y={1} />
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
-              <Text b>ARPANET GEOGRAPHIC MAP(1980)</Text>
+              <Text b>GEOGRAPHIC MAP</Text>
             </Card.Header>
             <Card.Divider />
             <Card.Body css={{ py: "$10" }}>
@@ -101,7 +101,7 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="n" size={18}>
-                      ARPANET GEOGRAPHIC MAP
+                      (ARPANET GEOGRAPHIC MAP(1980))
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
@@ -111,9 +111,7 @@ export default function About() {
                       src="https://thisdayintechhistory.com/wp-content/uploads/2012/11/arpanet80.gif"
                     />
                     <Text id="d">
-                      This shows how Arpanet influenced the marketplace as it
-                      served as an entryway into the booming business of
-                      ecommerce.
+                      This, combined with the prior image, shows how ARPANET continues to expand the reach of the internet which shows how it increased the intertwined nodes/institutions that used it to connect and share information.
                     </Text>
                   </Modal.Body>
                 </Modal>

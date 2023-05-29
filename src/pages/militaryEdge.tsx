@@ -36,15 +36,15 @@ export default function About() {
         <Row justify="center" align="center">
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
-              <Text b>ARPA Network, Grographic Map(1973)</Text>
+              <Text b>Military Use of Internet</Text>
             </Card.Header>
             <Card.Divider />
             <Card.Body css={{ py: "$10" }}>
               <Image
                 width={200}
                 height={200}
-                src="https://static.giggster.com/images/location/6f9c6e07-ecd6-4d9a-9d01-3e6840a93208/5450610d-c1af-436a-8844-3670f4df2ce6/full_hd_retina.jpeg"
-              />
+                src = "https://www.c4isrnet.com/resizer/zo-j4tMLNC2ySxMbXKU4ypSE6Fg=/1024x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/archetype/ELWLPDCMNBFY5EA2W5D7V4RQGU.jpg"
+                />
             </Card.Body>
             <Card.Divider />
             <Card.Footer>
@@ -61,16 +61,16 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="modal-title" size={18}>
-                      ARPA Network, Grographic Map
+                    (The Army is using fake social media feeds to help train soldiers in the most realistic environments imaginable. (Julius Chatters/Army))
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
                     <Image
                       width={400}
                       height={300}
-                      src="https://static.giggster.com/images/location/6f9c6e07-ecd6-4d9a-9d01-3e6840a93208/5450610d-c1af-436a-8844-3670f4df2ce6/full_hd_retina.jpeg"
+                      src = "https://www.c4isrnet.com/resizer/zo-j4tMLNC2ySxMbXKU4ypSE6Fg=/1024x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/archetype/ELWLPDCMNBFY5EA2W5D7V4RQGU.jpg"
                     />
-                    <Text id="modal-description">tetst</Text>
+                    <Text id="modal-description">This shows how ARPANET had a long term impact in the army since it forged the beginnings of the internet that is now being used constantly by the military.</Text>
                   </Modal.Body>
                 </Modal>
               </Row>
@@ -79,14 +79,14 @@ export default function About() {
           <Spacer y={1} />
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
-              <Text b>ARPANET GEOGRAPHIC MAP(1980)</Text>
+              <Text b>ARPANET/MILNET MAP</Text>
             </Card.Header>
             <Card.Divider />
             <Card.Body css={{ py: "$10" }}>
               <Image
                 width={10000}
                 height={200}
-                src="http://img.koreatimes.co.kr/upload/news/120325_a02_statwatch.jpg"
+                src="http://scihi.org/wp-content/uploads/2018/01/ARPANET_-_MILNT_Diagram_1984-768x427.jpg"
               />
             </Card.Body>
             <Card.Divider />
@@ -104,19 +104,17 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="n" size={18}>
-                      ARPANET GEOGRAPHIC MAP
+                      (ARPANET/MILNET GEOGRAPHIC MAP(1984))
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
                     <Image
                       width={400}
                       height={300}
-                      src="http://img.koreatimes.co.kr/upload/news/120325_a02_statwatch.jpg"
+                      src="http://scihi.org/wp-content/uploads/2018/01/ARPANET_-_MILNT_Diagram_1984-768x427.jpg"
                     />
                     <Text id="d">
-                      This shows how Arpanet influenced the marketplace as it
-                      served as an entryway into the booming business of
-                      ecommerce.
+                     This illustrates the widespread presence and connectivity of ARPANET within the military infrastructure. It showcases the curcial role ARPANET had in gaining an advantage through its creation of efficient communication, sharing of resources, and coordination between military institutions and research centers.
                     </Text>
                   </Modal.Body>
                 </Modal>
