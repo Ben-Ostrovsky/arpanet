@@ -31,7 +31,7 @@ export default function About() {
         <Row justify="center" align="center">
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
-              <Text b>ARPA Network, Grographic Map(1973)</Text>
+              <Text b>Evolution of Ecommerce Industry</Text>
             </Card.Header>
             <Card.Divider />
             <Card.Body css={{ py: "$10" }}>
@@ -56,7 +56,7 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="modal-title" size={18}>
-                      ARPA Network, Grographic Map
+                    (THE EVOLUTION OF E-COMMERCE INDUSTRY IN THE LAST FEW YEARS(2018))
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
@@ -66,7 +66,7 @@ export default function About() {
                       src = "https://www.agileinfoways.com/wp-content/uploads/2018/02/The-Evolution-of-E-Commerce-Industry-in-the-Last-few-Years.jpg"
                       />
                     <Text id="modal-description">
-                      tetst
+                      This image exemplifies the enduring impact that ARPANET had on the economy. Because of ARPANET's pivotal role in the creation of the internet, e-commerce has been able to expand and reach new markets, revolutionize consumer behavior, and drive significant economic transactions through online platforms, turning the traditional economy into a digital marketplace.
                     </Text>
                   </Modal.Body>
                 </Modal>
@@ -76,7 +76,7 @@ export default function About() {
           <Spacer y={1} />
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
-              <Text b>ARPANET GEOGRAPHIC MAP(1980)</Text>
+              <Text b>INTERNET ECONOMY GDP</Text>
             </Card.Header>
             <Card.Divider />
             <Card.Body css={{ py: "$10" }}>
@@ -101,7 +101,7 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="n" size={18}>
-                      ARPANET GEOGRAPHIC MAP
+                      (INTERNET ECONOMY AS A PERCENTAGE OF 2016 GDP(OECD)(2016))
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
@@ -111,9 +111,7 @@ export default function About() {
                       src="http://img.koreatimes.co.kr/upload/news/120325_a02_statwatch.jpg"
                     />
                     <Text id="d">
-                      This shows how Arpanet influenced the marketplace as it
-                      served as an entryway into the booming business of
-                      ecommerce.
+                      This image signifies how the development and widespread adoption of the internet, stemming from ARPANET's innovation, have transformed various sectors, fostering economic growth, innovation, and new business opportunities, contributing to the overall GDP of countries worldwide.
                     </Text>
                   </Modal.Body>
                 </Modal>
