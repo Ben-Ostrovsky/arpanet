@@ -38,7 +38,7 @@ export default function About() {
               <Image
                 width={200}
                 height={200}
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.C32J8yXs2ZPDaby2X1L-OAHaEt%26pid%3DApi&f=1&ipt=1dcae55955baeadf4f7c0c3d3f10a58108e719266c81d96f75804fc4780e7834&ipo=images"
+                src="https://www.agileinfoways.com/blog/blog/how-ecommerce-industry-got-its-existence/"
               />
             </Card.Body>
             <Card.Divider />
@@ -63,7 +63,7 @@ export default function About() {
                     <Image
                       width={400}
                       height={300}
-                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.C32J8yXs2ZPDaby2X1L-OAHaEt%26pid%3DApi&f=1&ipt=1dcae55955baeadf4f7c0c3d3f10a58108e719266c81d96f75804fc4780e7834&ipo=images"
+                      src="https://www.agileinfoways.com/blog/blog/how-ecommerce-industry-got-its-existence/"
                     />
                     <Text id="modal-description">
                       tetst
