@@ -10,6 +10,7 @@ import {
   Image,
   Spacer,
 } from "@nextui-org/react";
+import Head from "next/head";
 import React from "react";
 export default function About() {
   const CardItemImage = ({
@@ -22,23 +23,28 @@ export default function About() {
     setVis: any;
   }) => {
     return (
-      <Card css={{ mw: "330px", h: "auto" }} variant="bordered">
-        <Card.Header>
-          <Text b>{header}</Text>
-        </Card.Header>
-        <Card.Divider />
-        <Card.Body css={{ py: "$10" }}>
-          <Image width={200} height={200} src={imgURL} />
-        </Card.Body>
-        <Card.Divider />
-        <Card.Footer>
-          <Row justify="center" align="center">
-            <Button size="sm" light onPress={() => setVis(true)}>
-              Expand
-            </Button>
-          </Row>
-        </Card.Footer>
-      </Card>
+      <>
+        <Head>
+          <title>Spread of Info | Arpanet</title>
+        </Head>
+        <Card css={{ mw: "330px", h: "auto" }} variant="bordered">
+          <Card.Header>
+            <Text b>{header}</Text>
+          </Card.Header>
+          <Card.Divider />
+          <Card.Body css={{ py: "$10" }}>
+            <Image width={200} height={200} src={imgURL} />
+          </Card.Body>
+          <Card.Divider />
+          <Card.Footer>
+            <Row justify="center" align="center">
+              <Button size="sm" light onPress={() => setVis(true)}>
+                Expand
+              </Button>
+            </Row>
+          </Card.Footer>
+        </Card>
+      </>
     );
   };
   const CardItemText = ({
@@ -51,12 +57,12 @@ export default function About() {
     setVis: any;
   }) => {
     return (
-      <Card css={{ h: "auto" }} variant="bordered">
-        <Card.Header>
+      <Card css={{ mw: "330px", h: "auto" }} variant="bordered">
+        <Card.Header css={{ height: "50px" }}>
           <Text b>{header}</Text>
         </Card.Header>
         <Card.Divider />
-        <Card.Body>
+        <Card.Body css={{ height: "250px" }}>
           <Text>{text}</Text>
         </Card.Body>
         <Card.Divider />
@@ -73,6 +79,7 @@ export default function About() {
   const { setVisible, bindings } = useModal();
   const { setVisible: setVisible2, bindings: bindings2 } = useModal();
   const { setVisible: setVisible3, bindings: bindings3 } = useModal();
+  const { setVisible: setVisible4, bindings: bindings4 } = useModal();
 
   return (
     <div>
@@ -80,16 +87,26 @@ export default function About() {
         <Row justify="center" align="center">
           <Text h1>Spread of Information</Text>
         </Row>
+        <Spacer />
         <Text>
-          "The internet is (almost) everywhere. We rely on it when we want to
-          buy a new phone or a computer and use it when we need help with
-          studying. It’s a great place to play games, share music, or maybe even
-          meet the love of your life. But it wasn’t always like this. You’ll
-          often hear that the internet began in the ‘90s, but its actual
-          beginnings date back way earlier. To be precise, it was envisioned by
-          a scientist who wanted to improve communication between computers and
-          humans and how they exchange data."
+          The method that data was shared and disseminated was revolutionized by
+          ARPANET, which had a significant impact on how quickly information
+          spread. It introduced a decentralized network architecture that made
+          it possible to transmit information quickly and effectively across
+          very long distances. As it can instantaneously access data, it was
+          seen as a development in communication technology. Now, the prior
+          issues of space and time were solved for the transmission of
+          information. And by providing a platform for people, groups, and
+          institutions to easily share knowledge, cooperate, and access
+          resources, ARPANET lay the groundwork for the Internet. It enabled the
+          quick distribution of ideas, news, and research by creating a global
+          network that linked people from many locations and backgrounds. It is
+          impossible to exaggerate the significance of ARPANET for the
+          dissemination of information because it sparked a paradigm change in
+          communication and paved the way for the information age we live in
+          today.
         </Text>
+        <Spacer />
         <Row justify="center" align="center">
           <CardItemImage
             header={"Geographic Map"}
@@ -99,7 +116,7 @@ export default function About() {
             setVis={setVisible}
           />
 
-          <Spacer x={4} />
+          <Spacer x={2} />
 
           <CardItemImage
             header={"GEOGRAPHIC MAP"}
@@ -108,13 +125,23 @@ export default function About() {
             }
             setVis={setVisible2}
           />
-        </Row>
-        <Spacer y={1}/>
-        <CardItemText
-          header = {"Program Records"}
-          text={"AAAAAA"}
-          setVis={setVisible3}
+          <Spacer x={2} />
+          <CardItemText
+            header={"Growing Community"}
+            text={
+              "“By the end of 1975, twenty-nine sites were connected to the ARPANET. This early network is now an operational resource supporting a large and growing research community in the computer science and related disciplines.”"
+            }
+            setVis={setVisible3}
           />
+          <Spacer x={2} />
+          <CardItemText
+            header={"The Arpanet and Its Impact on the State of Networking"}
+            text={
+              "“I sit down at my desk and I try to log in, and it said, “One prior failed attempt.” I knew that it wasn’t me, but I knew we had logs that kept track. I asked the system administrator to look into it. He identified that the failed attempt came from a military research laboratory on the other side of the country.”"
+            }
+            setVis={setVisible4}
+          />
+        </Row>
       </Container>
 
       {/* MODAL SETUP BELOW */}
@@ -181,21 +208,52 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="n" size={18}>
+            Growing Community
+          </Text>
+        </Modal.Header>
+        <Modal.Body>
+          <Text>
+            “By the end of 1975, twenty-nine sites were connected to the
+            ARPANET. This early network is now an operational resource
+            supporting a large and growing research community in the computer
+            science and related disciplines.”
+          </Text>
+          <Text id="d">
+            The quote highlights ARPANET's pioneering role and expanding
+            capabilities in spreading information. By the end of 1975, ARPANET
+            connected twenty-nine sites, marking the early stages of a
+            groundbreaking network. It became an operational resource,
+            supporting a large and growing research community in computer
+            science and related disciplines. This demonstrates ARPANET's
+            significance in facilitating information exchange and collaboration,
+            enabling researchers to share knowledge and advance their fields.
+            ARPANET's impact on information dissemination and its role in
+            supporting the research community solidified its position as a
+            pioneering and influential network.{" "}
+          </Text>
+        </Modal.Body>
+      </Modal>
+      <Modal
+        scroll
+        width="600px"
+        aria-labelledby="n"
+        aria-describedby="d"
+        {...bindings4}
+      >
+        <Modal.Header>
+          <Text id="n" size={18}>
             (ARPANET GEOGRAPHIC MAP(1980))
           </Text>
         </Modal.Header>
         <Modal.Body>
-          <Image
-            width={400}
-            height={300}
-            src="https://thisdayintechhistory.com/wp-content/uploads/2012/11/arpanet80.gif"
-          />
-          <Text id="d">
-            This, combined with the prior image, shows how ARPANET continues to
-            expand the reach of the internet which shows how it increased the
-            intertwined nodes/institutions that used it to connect and share
-            information.
+          <Text>
+            “I sit down at my desk and I try to log in, and it said, “One prior
+            failed attempt.” I knew that it wasn’t me, but I knew we had logs
+            that kept track. I asked the system administrator to look into it.
+            He identified that the failed attempt came from a military research
+            laboratory on the other side of the country.”
           </Text>
+          <Text id="d">Reason 2</Text>
         </Modal.Body>
       </Modal>
     </div>

@@ -5,6 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import { Text, Image, Spacer } from "@nextui-org/react";
 import "react-vertical-timeline-component/style.min.css";
+import Head from "next/head";
 
 export default function About() {
   const { theme } = useTheme();
@@ -27,12 +28,15 @@ export default function About() {
 
   return (
     <div>
+      <Head>
+        <title>HC | Arpanet</title>
+      </Head>
       <VerticalTimeline lineColor="#697177">
         <VerticalTimelineElement
           contentStyle={styles}
           contentArrowStyle={{ borderRight: "10px solid " + styles.background }}
           iconStyle={{ background: "#0072F5" }}
-          date="October 4th, 1957"
+          date="1957"
         >
           <Text h3> Sputnik 1 - Exigence</Text>
           <Spacer />
@@ -42,6 +46,7 @@ export default function About() {
             }
             width={350}
           />
+          (NASA)
           <Spacer />
           <Text span>
             The Soviet Union launches the satellite Sputnik, marking the
@@ -212,12 +217,14 @@ export default function About() {
           contentStyle={styles}
           contentArrowStyle={{ borderRight: "10px solid " + styles.background }}
           iconStyle={{ background: "#0072F5" }}
-          date="1984-1989"
+          date="1980-1989"
         >
           <Text h3> Success</Text>
           <Spacer />
           <Image
-            src={" http://mercury.lcs.mit.edu/~jnc/tech/jpg/ARPANet/G89Apr.jpg"}
+            src={
+              " https://personalpages.manchester.ac.uk/staff/m.dodge/cybergeography/atlas/arpanet4.gif"
+            }
             width={350}
           />
           <Spacer />
@@ -225,8 +232,15 @@ export default function About() {
             The number of hosts on ARPANET surpasses 1,000, reflecting its
             expanding user base. The network becomes a vital tool for
             researchers, scientists, and academics across the United States.
-            Other networks inspired by Arpanet, such as MilNet and the World
-            Wide Web, begin to be proposed.
+          </Text>
+          <Spacer />
+          <Text span>
+            The implementation of TCP/IP as the standard protocol suite for
+            ARPANET and other interconnected networks laid the groundwork for a
+            robust, scalable, and interoperable network. This standardized
+            protocol became the basis for data transmission and routing across
+            the Internet, allowing other networks to follow suite. And soon,
+            they did.
           </Text>
         </VerticalTimelineElement>
 
@@ -234,7 +248,7 @@ export default function About() {
           contentStyle={styles}
           contentArrowStyle={{ borderRight: "10px solid " + styles.background }}
           iconStyle={{ background: "#0072F5" }}
-          date="1991"
+          date="1990"
         >
           <Text h3> The Final Days </Text>
           <Text span>

@@ -29,6 +29,11 @@ export default function MainNavbar() {
             Historical Context
           </Navbar.Link>
         </Link>
+        <Link href={"/military"} passHref legacyBehavior>
+          <Navbar.Link isActive={router.pathname == "/military"}>
+            Military
+          </Navbar.Link>
+        </Link>
         <Link href={"/economy"} passHref legacyBehavior>
           <Navbar.Link isActive={router.pathname == "/economy"}>
             Economy
@@ -37,11 +42,6 @@ export default function MainNavbar() {
         <Link href={"/spread"} passHref legacyBehavior>
           <Navbar.Link isActive={router.pathname == "/spread"}>
             Spread of Information
-          </Navbar.Link>
-        </Link>
-        <Link href={"/militaryEdge"} passHref legacyBehavior>
-          <Navbar.Link isActive={router.pathname == "/militaryEdge"}>
-            Military Edge
           </Navbar.Link>
         </Link>
       </Navbar.Content>

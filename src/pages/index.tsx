@@ -9,6 +9,7 @@ import {
   Spacer,
   Text,
 } from "@nextui-org/react";
+import Head from "next/head";
 
 const isBrowser = () => typeof window !== "undefined"; //The approach recommended by Next.js
 
@@ -20,6 +21,9 @@ function scrollDown() {
 export default function About() {
   return (
     <div>
+      <Head>
+        <title>Home | Arpanet</title>
+      </Head>
       <Grid.Container
         justify="center"
         css={{

@@ -10,6 +10,7 @@ import {
   Image,
   Spacer,
 } from "@nextui-org/react";
+import Head from "next/head";
 import React from "react";
 export default function About() {
   const { setVisible, bindings } = useModal();
@@ -18,6 +19,9 @@ export default function About() {
   const { setVisible: setVisible4, bindings: bindings4 } = useModal();
   return (
     <div>
+      <Head>
+        <title>Economy | Arpanet</title>
+      </Head>
       <Container>
         <Row justify="center" align="center">
           <Text color="#85bb65" h1>
@@ -25,15 +29,22 @@ export default function About() {
           </Text>
         </Row>
         <Text>
-          "The internet is (almost) everywhere. We rely on it when we want to
-          buy a new phone or a computer and use it when we need help with
-          studying. It’s a great place to play games, share music, or maybe even
-          meet the love of your life. But it wasn’t always like this. You’ll
-          often hear that the internet began in the ‘90s, but its actual
-          beginnings date back way earlier. To be precise, it was envisioned by
-          a scientist who wanted to improve communication between computers and
-          humans and how they exchange data."
+          The early internet, ARPANET, had a significant effect on the economy.
+          ARPANET established the framework for an international network that
+          transformed information sharing and business procedures by
+          facilitating data transfer and communication between computers. The
+          ability to quickly and effectively transmit data helped businesses to
+          increase their client base and operational efficiency, which in turn
+          enabled the growth of electronic commerce. ARPANET had created a
+          platform in which new companies and technology allowed for innovation
+          and entrepreneurship. The ARPANET has a positive economic impact on
+          industry, services, and finance. This is because it increased
+          productivity, decreased prices for transactions, and provided a
+          market. In the end, the economic revolution brought about by the
+          ARPANET paved the path for the digital age and still has an impact on
+          our current networked society.
         </Text>
+        <Spacer y={1} />
         <Row justify="center" align="center">
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
@@ -74,19 +85,20 @@ export default function About() {
                     />
                     <Text id="modal-description">
                       This image exemplifies the enduring impact that ARPANET
-                      had on the economy. Because of ARPANET's pivotal role in
-                      the creation of the internet, e-commerce has been able to
-                      expand and reach new markets, revolutionize consumer
-                      behavior, and drive significant economic transactions
-                      through online platforms, turning the traditional economy
-                      into a digital marketplace.
+                      had on the economy. It had a pivotal role in the creation
+                      of e-commerce not only since it aided in the creation of
+                      the internet, but by being able to expand and reach new
+                      markets, revolutionize consumer behavior, and drive
+                      significant economic transactions through online
+                      platforms, turning the traditional economy into a digital
+                      marketplace.
                     </Text>
                   </Modal.Body>
                 </Modal>
               </Row>
             </Card.Footer>
           </Card>
-          <Spacer x={4} />
+          <Spacer x={2} />
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
               <Text b>INTERNET ECONOMY GDP</Text>
@@ -136,9 +148,7 @@ export default function About() {
               </Row>
             </Card.Footer>
           </Card>
-        </Row>
-        <Spacer y={1} />
-        <Row justify="center" align="center">
+          <Spacer x={2} />
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
               <Text b>ARPANET MANAGEMENT STUDY</Text>
@@ -190,7 +200,7 @@ export default function About() {
               </Row>
             </Card.Footer>
           </Card>
-          <Spacer x={4} />
+          <Spacer x={2} />
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
               <Text b>
