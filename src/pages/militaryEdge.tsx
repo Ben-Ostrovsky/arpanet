@@ -94,7 +94,7 @@ export default function About() {
               <Image
                 width={10000}
                 height={200}
-                src="http://scihi.org/wp-content/uploads/2018/01/ARPANET_-_MILNT_Diagram_1984-768x427.jpg"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/ARPANET_-_MILNT_Diagram_1984.jpg/1200px-ARPANET_-_MILNT_Diagram_1984.jpg?20170823102338"
               />
             </Card.Body>
             <Card.Divider />
@@ -119,7 +119,7 @@ export default function About() {
                     <Image
                       width={400}
                       height={300}
-                      src="http://scihi.org/wp-content/uploads/2018/01/ARPANET_-_MILNT_Diagram_1984-768x427.jpg"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/ARPANET_-_MILNT_Diagram_1984.jpg/1200px-ARPANET_-_MILNT_Diagram_1984.jpg?20170823102338"
                     />
                     <Text id="d">
                       This illustrates the widespread presence and connectivity
