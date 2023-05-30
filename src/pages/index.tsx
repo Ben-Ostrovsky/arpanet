@@ -69,23 +69,28 @@ export default function About() {
       <Spacer y={3} />
 
       <Grid.Container gap={2} justify="center">
+        As the precursor of the internet, ARPANET is a frontier in America's
+        history by establishing the foundations for ecommerce, facilitating the
+        spread of information, and advancing US military technological
+        capabilities.
         <Grid>
-          <Card css={{ mw: "400px" }}>
+          <Card css={{ height: "530px", mw: "400px" }}>
             <Card.Body>
               <Text>
                 {
-                  "Benjamin Telanoff once said that The Advanced Research Projects Agency Network (ARPANET), the forerunner of the Internet, was a pioneering long-haul network funded by the U.S. Department of Defense’s Advanced Research Projects Agency (ARPA). It served as the test bed for many areas of internetworking technology development and testing, and acted as the central backbone during the development of the Internet. The ARPANET was built using packet-switching computers interconnected by leased lines."
+                  "ARPANET is the Advanced Reserach Projects Agency Network that was a forerunner of the internet as an experimental network. It was created as a 'part of a response to the perceived threat of the Soviet’s launch of Sputnik'(Weber State University) as a form of technological advancement. Because of this it had the original purpose of linking institutions the Pentagon had funded as a means of research. Allthough this was it's intended purpose, throughout its creation the inventors had decided that not only would it's service be for the military, but for the people as well as a way to facilitate information quickly across the country and to provide a basis for online institutions like e-commerce. After its first use, interest in the matter was generated towards the two-node network. This resulted in the fact that 'By the end of 1969, academic institutions were scrambling to connect to ARPANET'(Britannica) which furthered along the creation of the internet."
                 }
               </Text>
             </Card.Body>
           </Card>
         </Grid>
+        <Spacer x={2} />
         <Grid>
-          <Card css={{ mw: "400px" }}>
+          <Card css={{ height: "530px", mw: "400px" }}>
             <Card.Body>
               <Text>
                 {
-                  "Benjamin Ostrovsky aslo once thought that The Advanced Research Projects Agency Network (ARPANET), the forerunner of the Internet, was a pioneering long-haul network funded by the U.S. Department of Defense’s Advanced Research Projects Agency (ARPA). It served as the test bed for many areas of internetworking technology development and testing, and acted as the central backbone during the development of the Internet. The ARPANET was built using packet-switching computers interconnected by leased lines."
+                  "ARPANET was like a big network that connected computers together. It used packet switching, which basically divided data into smaller packets tagged with its necessary information and transmitted independently across the network. This was helpful as by being able to take different routes, it ensured reliabliity and increased efficiency. ARPANET used Interface Message Processors (IMPs) as nodes. These facilitated the routing of packets between the computers. This caused them to be the backbones as they allowed the interconnection between various host computers. "
                 }
               </Text>
             </Card.Body>

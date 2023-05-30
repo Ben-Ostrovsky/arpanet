@@ -10,16 +10,20 @@ import {
   Image,
   Spacer,
 } from "@nextui-org/react";
-import React from 'react'
+import React from "react";
 export default function About() {
   const { setVisible, bindings } = useModal();
-  const { setVisible: setVisible2, bindings: bindings2} = useModal();
+  const { setVisible: setVisible2, bindings: bindings2 } = useModal();
   const { setVisible: setVisible3, bindings: bindings3 } = useModal();
   const { setVisible: setVisible4, bindings: bindings4 } = useModal();
   return (
     <div>
       <Container>
-        <Row justify="center" align = "center"><Text color = "#85bb65" h1>Economy</Text></Row>
+        <Row justify="center" align="center">
+          <Text color="#85bb65" h1>
+            Economy
+          </Text>
+        </Row>
         <Text>
           "The internet is (almost) everywhere. We rely on it when we want to
           buy a new phone or a computer and use it when we need help with
@@ -36,11 +40,11 @@ export default function About() {
               <Text b>Evolution of Ecommerce Industry</Text>
             </Card.Header>
             <Card.Divider />
-            <Card.Body css={{ py: "$10" }}>
+            <Card.Body css={{ height: "250px", py: "$10" }}>
               <Image
                 width={200}
                 height={200}
-                src = "https://www.agileinfoways.com/wp-content/uploads/2018/02/The-Evolution-of-E-Commerce-Industry-in-the-Last-few-Years.jpg"
+                src="https://www.agileinfoways.com/wp-content/uploads/2018/02/The-Evolution-of-E-Commerce-Industry-in-the-Last-few-Years.jpg"
               />
             </Card.Body>
             <Card.Divider />
@@ -58,17 +62,24 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="modal-title" size={18}>
-                    (THE EVOLUTION OF E-COMMERCE INDUSTRY IN THE LAST FEW YEARS(2018))
+                      (THE EVOLUTION OF E-COMMERCE INDUSTRY IN THE LAST FEW
+                      YEARS(2018))
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
                     <Image
                       width={400}
                       height={300}
-                      src = "https://www.agileinfoways.com/wp-content/uploads/2018/02/The-Evolution-of-E-Commerce-Industry-in-the-Last-few-Years.jpg"
-                      />
+                      src="https://www.agileinfoways.com/wp-content/uploads/2018/02/The-Evolution-of-E-Commerce-Industry-in-the-Last-few-Years.jpg"
+                    />
                     <Text id="modal-description">
-                      This image exemplifies the enduring impact that ARPANET had on the economy. Because of ARPANET's pivotal role in the creation of the internet, e-commerce has been able to expand and reach new markets, revolutionize consumer behavior, and drive significant economic transactions through online platforms, turning the traditional economy into a digital marketplace.
+                      This image exemplifies the enduring impact that ARPANET
+                      had on the economy. Because of ARPANET's pivotal role in
+                      the creation of the internet, e-commerce has been able to
+                      expand and reach new markets, revolutionize consumer
+                      behavior, and drive significant economic transactions
+                      through online platforms, turning the traditional economy
+                      into a digital marketplace.
                     </Text>
                   </Modal.Body>
                 </Modal>
@@ -81,7 +92,7 @@ export default function About() {
               <Text b>INTERNET ECONOMY GDP</Text>
             </Card.Header>
             <Card.Divider />
-            <Card.Body css={{ py: "$10" }}>
+            <Card.Body css={{ height: "250px", py: "$10" }}>
               <Image
                 width={10000}
                 height={200}
@@ -103,7 +114,7 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="n" size={18}>
-                      (INTERNET ECONOMY AS A PERCENTAGE OF 2016 GDP(OECD)(2016))
+                      (INTERNET ECONOMY AS A PERCENTAGE OF 2016 GDP(OECD)(2012))
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
@@ -113,7 +124,12 @@ export default function About() {
                       src="http://img.koreatimes.co.kr/upload/news/120325_a02_statwatch.jpg"
                     />
                     <Text id="d">
-                      This image signifies how the development and widespread adoption of the internet, stemming from ARPANET's innovation, have transformed various sectors, fostering economic growth, innovation, and new business opportunities, contributing to the overall GDP of countries worldwide.
+                      This image signifies how the development and widespread
+                      adoption of the internet, stemming from ARPANET's
+                      innovation, have transformed various sectors, fostering
+                      economic growth, innovation, and new business
+                      opportunities, contributing to the overall GDP of
+                      countries worldwide.
                     </Text>
                   </Modal.Body>
                 </Modal>
@@ -128,8 +144,14 @@ export default function About() {
               <Text b>ARPANET MANAGEMENT STUDY</Text>
             </Card.Header>
             <Card.Divider />
-            <Card.Body css={{ py: "$10" }}>
-              <Text>"We recommend that the commercial packet switching industry be encouraged to provide the additional capacity that ARPA and new governmental applications will be seeking from this present ARPANET, rather than permit an open-ended expansion of the ARPANET communications network..” </Text>
+            <Card.Body css={{ height: "250px", py: "$10" }}>
+              <Text>
+                "We recommend that the commercial packet switching industry be
+                encouraged to provide the additional capacity that ARPA and new
+                governmental applications will be seeking from this present
+                ARPANET, rather than permit an open-ended expansion of the
+                ARPANET communications network..”{" "}
+              </Text>
             </Card.Body>
             <Card.Divider />
             <Card.Footer>
@@ -146,13 +168,22 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="modal-title" size={18}>
-                    (ARPANET MANAGEMENT STUDY(Paul Baran)(1974))
+                      (ARPANET MANAGEMENT STUDY(Paul Baran)(1974))
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
-                    <Text>"We recommend that the commercial packet switching industry be encouraged to provide the additional capacity that ARPA and new governmental applications will be seeking from this present ARPANET..” </Text>
+                    <Text>
+                      "We recommend that the commercial packet switching
+                      industry be encouraged to provide the additional capacity
+                      that ARPA and new governmental applications will be
+                      seeking from this present ARPANET..”{" "}
+                    </Text>
                     <Text id="modal-description">
-                      Even in the earlier stages of ARPANET, Baran was already envisioning a wide-scale use of packet switching technology inluding its use in the commercial sector. This demonstrates the economical potential perceived and shows why this technology had introduced the idea of e-commerce.
+                      Even in the earlier stages of ARPANET, Baran was already
+                      envisioning a wide-scale use of packet switching
+                      technology inluding its use in the commercial sector. This
+                      demonstrates the economical potential perceived and shows
+                      why this technology had introduced the idea of e-commerce.
                     </Text>
                   </Modal.Body>
                 </Modal>
@@ -162,11 +193,17 @@ export default function About() {
           <Spacer x={4} />
           <Card css={{ mw: "330px" }} variant="bordered">
             <Card.Header>
-              <Text b>The Arpanet and Its Impact on the State of Networking</Text>
+              <Text b>
+                The Arpanet and Its Impact on the State of Networking
+              </Text>
             </Card.Header>
             <Card.Divider />
-            <Card.Body css={{ py: "$10" }}>
-              <Text>"I like to argue that the Arpanet was the first of the shared economy systems, a system similar to Airbnb and Uber that used resources that were otherwise idle.”</Text>
+            <Card.Body css={{ height: "228px", py: "$10" }}>
+              <Text>
+                "I like to argue that the Arpanet was the first of the shared
+                economy systems, a system similar to Airbnb and Uber that used
+                resources that were otherwise idle.”
+              </Text>
             </Card.Body>
             <Card.Divider />
             <Card.Footer>
@@ -187,9 +224,19 @@ export default function About() {
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
-                    <Text>"I like to argue that the Arpanet was the first of the shared economy systems, a system similar to Airbnb and Uber that used resources that were otherwise idle.”</Text>
+                    <Text>
+                      "I like to argue that the Arpanet was the first of the
+                      shared economy systems, a system similar to Airbnb and
+                      Uber that used resources that were otherwise idle.”
+                    </Text>
                     <Text id="d">
-                    According to the claim, the ARPANET was a model of the shared economy before Airbnb and Uber, where unused resources were used wisely. This highlights the economic contribution of the ARPANET by pioneering the idea of resource-sharing and developing a platform for optimum resource usage, resulting in financial gains and improvements in efficiency.
+                      According to the claim, the ARPANET was a model of the
+                      shared economy before Airbnb and Uber, where unused
+                      resources were used wisely. This highlights the economic
+                      contribution of the ARPANET by pioneering the idea of
+                      resource-sharing and developing a platform for optimum
+                      resource usage, resulting in financial gains and
+                      improvements in efficiency.
                     </Text>
                   </Modal.Body>
                 </Modal>
