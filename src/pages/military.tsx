@@ -20,6 +20,8 @@ export default function About() {
   const { setVisible: setVisible2, bindings: bindings2 } = useModal();
   const { setVisible: setVisible3, bindings: bindings3 } = useModal();
   const { setVisible: setVisible4, bindings: bindings4 } = useModal();
+  const { setVisible: setVisible5, bindings: bindings5 } = useModal();
+  const { setVisible: setVisible6, bindings: bindings6 } = useModal();
   return (
     <div>
       <Head>
@@ -88,7 +90,7 @@ export default function About() {
                 src="https://epsilon.aeon.co/images/f8ba0a79-8a5e-4d3c-ada0-aa928fc72422/header_essay-sage-104624883_master.jpg"
                 objectFit="cover"
                 width="100%"
-                height={340}
+                height={380}
               />
               <Card.Divider />
               <Card.Footer
@@ -103,7 +105,7 @@ export default function About() {
                 }}
               >
                 <Row justify="center" align="center">
-                  <Button size="sm" light onPress={() => setVisible2(true)}>
+                  <Button size="sm" light onPress={() => setVisible5(true)}>
                     Expand
                   </Button>
                 </Row>
@@ -132,7 +134,7 @@ export default function About() {
                 src="https://www.c4isrnet.com/resizer/zo-j4tMLNC2ySxMbXKU4ypSE6Fg=/1024x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/archetype/ELWLPDCMNBFY5EA2W5D7V4RQGU.jpg"
                 objectFit="none"
                 width="100%"
-                height={340}
+                height={380}
               />
               <Card.Divider />
               <Card.Footer
@@ -175,7 +177,7 @@ export default function About() {
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/ARPANET_-_MILNT_Diagram_1984.jpg/1200px-ARPANET_-_MILNT_Diagram_1984.jpg?20170823102338"
                 objectFit="none"
                 width="100%"
-                height={340}
+                height={380}
               />
               <Card.Divider />
               <Card.Footer
@@ -225,7 +227,7 @@ export default function About() {
                 src="https://pbs.twimg.com/media/ElfloJfW0AMwgiD.jpg"
                 objectFit="cover"
                 width="100%"
-                height={400}
+                height={380}
                 css={{ filter: "brightness(70%)" }}
               />
               <Card.Divider />
@@ -250,7 +252,7 @@ export default function About() {
           </Grid>
 
           <Grid>
-            <Card css={{ mw: "330px", height: "340px" }} variant="shadow">
+            <Card css={{ mw: "330px" }} variant="shadow">
               <Card.Header css={{ position: "absolute", zIndex: 1 }}>
                 <Col>
                   <Text
@@ -274,9 +276,9 @@ export default function About() {
               </Card.Header>
               <Card.Image
                 src="https://brewminate.com/wp-content/uploads/2019/03/031219-76-History-Internet-Technology.jpg"
-                objectFit="cover"
+                objectFit="fill"
                 width="100%"
-                height={400}
+                height={380}
                 css={{ filter: "brightness(70%)" }}
               />
               <Card.Divider />
@@ -299,6 +301,61 @@ export default function About() {
               </Card.Footer>
             </Card>
           </Grid>
+
+          <Grid>
+            <Card css={{ mw: "330px" }} variant="shadow">
+              <Card.Header css={{ position: "absolute", zIndex: 1 }}>
+                <Col>
+                  <Text
+                    size={12}
+                    weight="bold"
+                    transform="uppercase"
+                    color="#ffffffAA"
+                  >
+                    Previous Failures
+                  </Text>
+                  <Text b size={30} color="white">
+                    ARPANET - Pioneer
+                  </Text>
+                  <Text size={12} weight="bold" color="white">
+                    In 1964, Paul Baran published On Distributed Communications,
+                    in which he critiqued then existing military communications
+                    design as a vulnerable, centralized telecommunications
+                    network. Diagrammed as a spoke model with a hub in the
+                    middle, an enemy could successfully take out a single point
+                    causing the network to fail. Baran advocated that the U.S.
+                    Department of Defense redo their entire communications
+                    system, moving to a decentralized, packet switched design.
+                  </Text>
+                </Col>
+              </Card.Header>
+              <Card.Image
+                src="https://f4.bcbits.com/img/a0342344220_10.jpg"
+                objectFit="fill"
+                width="100%"
+                height={380}
+                css={{ filter: "brightness(70%)" }}
+              />
+              <Card.Divider />
+              <Card.Footer
+                isBlurred
+                css={{
+                  position: "absolute",
+                  bgBlur: "#ffffff66",
+                  borderTop:
+                    "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
+                  bottom: 0,
+                  zIndex: 1,
+                }}
+              >
+                <Row justify="center" align="center">
+                  <Button size="sm" light onPress={() => setVisible6(true)}>
+                    Expand
+                  </Button>
+                </Row>
+              </Card.Footer>
+            </Card>
+          </Grid>
         </Grid.Container>
       </Container>
 
@@ -313,8 +370,9 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="modal-title" size={18}>
-            (The Army is using fake social media feeds to help train soldiers in
-            the most realistic environments imaginable. (Julius Chatters/Army))
+            Secondary - (The Army is using fake social media feeds to help train
+            soldiers in the most realistic environments imaginable. (Julius
+            Chatters/Army))
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -334,13 +392,46 @@ export default function About() {
       <Modal
         scroll
         width="600px"
+        aria-labelledby="modal-title"
+        aria-describedby="modal-description"
+        {...bindings6}
+      >
+        <Modal.Header>
+          <Text id="modal-title" size={18}>
+            Secondary - Cyber Telecom
+          </Text>
+        </Modal.Header>
+        <Modal.Body>
+          <Text>
+            In 1964, Paul Baran published On Distributed Communications, in
+            which he critiqued then existing military communications design as a
+            vulnerable, centralized telecommunications network. Diagrammed as a
+            spoke model with a hub in the middle, an enemy could successfully
+            take out a single point causing the network to fail. Baran advocated
+            that the U.S. Department of Defense redo their entire communications
+            system, moving to a decentralized, packet switched design.
+          </Text>
+          <Text b id="modal-description">
+            This vulnerability revealed how weak hub based network system's
+            where, giving birth to packet-switching desentrilized systems like
+            ARPANET and its descendants. Baran's critique was proof to the
+            government of an undescovered frontier, and his early realization of
+            this issue landed him a leading job in ARPANET several years down
+            the line.
+          </Text>
+        </Modal.Body>
+      </Modal>
+
+      <Modal
+        scroll
+        width="600px"
         aria-labelledby="n"
         aria-describedby="d"
         {...bindings2}
       >
         <Modal.Header>
           <Text id="n" size={18}>
-            (ARPANET/MILNET GEOGRAPHIC MAP(1984))
+            Primary - (ARPANET/MILNET GEOGRAPHIC MAP(1984))
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -368,7 +459,7 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="modal-title" size={18}>
-            (ARPANET MANAGEMENT STUDY(Paul Baran)(1974))
+            Primary - (ARPANET MANAGEMENT STUDY(Paul Baran)(1974))
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -389,6 +480,43 @@ export default function About() {
           </Text>
         </Modal.Body>
       </Modal>
+
+      <Modal
+        scroll
+        width="600px"
+        aria-labelledby="modal-title"
+        aria-describedby="modal-description"
+        {...bindings5}
+      >
+        <Modal.Header>
+          <Text id="modal-title" size={18}>
+            Secondary - (Cyber Telecom, 2019)
+          </Text>
+        </Modal.Header>
+        <Modal.Body>
+          <Text>
+            “President Dwight D. Eisenhower created ARPA in early 1958 as part
+            of a response to the perceived threat of the Soviet’s launch of
+            Sputnik in October of 1957. Buoyed by the efforts of scientists in
+            World War II in creating the Atomic Bomb, the ENIAC machine, and
+            breaking the German ENIGMA code, among other monumental inventions"
+          </Text>
+          <Text>
+            “President Dwight D. Eisenhower created ARPA in early 1958 as part
+            of a response to the perceived threat of the Soviet’s launch of
+            Sputnik in October of 1957. Buoyed by the efforts of scientists in
+            World War II in creating the Atomic Bomb, the ENIAC machine, and
+            breaking the German ENIGMA code, among other monumental inventions …
+          </Text>
+          <Text b id="modal-description">
+            In the context of the Cold War, this reason for ARPANET is sensible.
+            These quotes reveal that the military was both ambitious and hopeful
+            in the ARPANET project, and miracoulously, they where able to
+            succeed, changing the military and general world forever.
+          </Text>
+        </Modal.Body>
+      </Modal>
+
       <Modal
         scroll
         width="600px"
@@ -398,7 +526,7 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="n" size={18}>
-            (Leonard Kleinrock(2019))
+            Primary - (Leonard Kleinrock(2019))
           </Text>
         </Modal.Header>
         <Modal.Body>
