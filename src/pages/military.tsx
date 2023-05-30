@@ -511,14 +511,7 @@ export default function About() {
             of a response to the perceived threat of the Soviet’s launch of
             Sputnik in October of 1957. Buoyed by the efforts of scientists in
             World War II in creating the Atomic Bomb, the ENIAC machine, and
-            breaking the German ENIGMA code, among other monumental inventions"
-          </Text>
-          <Text>
-            “President Dwight D. Eisenhower created ARPA in early 1958 as part
-            of a response to the perceived threat of the Soviet’s launch of
-            Sputnik in October of 1957. Buoyed by the efforts of scientists in
-            World War II in creating the Atomic Bomb, the ENIAC machine, and
-            breaking the German ENIGMA code, among other monumental inventions …
+            breaking the German ENIGMA code, among other monumental inventions"(Weber)
           </Text>
           <Text b id="modal-description">
             In the context of the Cold War, this reason for ARPANET is sensible.
