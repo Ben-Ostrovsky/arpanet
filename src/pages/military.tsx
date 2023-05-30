@@ -379,16 +379,8 @@ export default function About() {
             src="https://www.c4isrnet.com/resizer/zo-j4tMLNC2ySxMbXKU4ypSE6Fg=/1024x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/archetype/ELWLPDCMNBFY5EA2W5D7V4RQGU.jpg"
           />
           <Text id="modal-description">
-            Connected networks using TCP technology, which was first implemented
-            by the ARPANET, is still being used today like in this simulation.
-            The implementation of TCP/IP as the standard protocol suite for
-            ARPANET and other interconnected networks laid the groundwork for a
-            robust, scalable, and interoperable network. This standardized
-            protocol became the basis for data transmission and routing across
-            Networks, which STILL powers some military communication today. This
-            is to say that is the 70s-80s , ARPANET allowed the US military
-            (it's only user, aside professors on the project) to be more
-            connected that any other country could at this time.
+          Like in this image, TCP technology first implemented by ARPANET is still being used in the military. By implementing TCP/IP, ARPANET laid the groundwork for a more scalable and robust network. This standardized protocol became the basis for data transmission and routing across Networks, which STILL powers some military communication today. This is to say that in the 70s-80s , ARPANET allowed the US military (its only user, aside from professors on the project) to be more connected than any other country could at this time. This shows a long term impact of ARPANET.
+
           </Text>
         </Modal.Body>
       </Modal>

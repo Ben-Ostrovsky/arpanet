@@ -260,15 +260,7 @@ export default function About() {
             laboratory on the other side of the country.”
           </Text>
           <Text id="d">
-            This quote by Steve Croker, one of the original creators of ARPANET,
-            is the beginning to a longer interview in which he and other ARPANET
-            colleagues disucss the 'dark side' of ARPANET. Croker brings up this
-            point to illustrate that with the spread of information comes both
-            good and bad. People learn how to do good in the world but also
-            learn how to do evil, such as fraud and theft. Croker was shocked to
-            have experienced an attack so early on in ARPANET, and from then on
-            was convinced that ARPANET had the power to unite people and share
-            their ideas: both under good and evil.
+          This quote by Steve Croker, one of the original creators of ARPANET, is the beginning to a longer interview in which he and other ARPANET colleagues discuss the 'dark side' of ARPANET. Croker brings up this point to illustrate that with the spread of information comes both good and bad. Croker was shocked to have experienced an attack so early in the phases of ARPANET, and from then on he was convinced that ARPANET had the power to unite people and share their ideas in both good and bad ways. This is the dark side that it brought, the potential for the "spread" of evil.
           </Text>
         </Modal.Body>
       </Modal>

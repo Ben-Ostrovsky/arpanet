@@ -48,11 +48,7 @@ export default function About() {
           />
           <Spacer />
           <Text span>
-            The Soviet Union launches the satellite Sputnik, marking the
-            beginning of the Space Age and triggering the Space Race between the
-            United States and the Soviet Union. The launch of Sputnik raises
-            concerns about national security and technological superiority in
-            the United States.
+            The Soviet Union launched Sputnik, the beginning of the Space Race between the USA and USSR. As USSR launched first, it grew discontent within the public about the US's superiority, leading them to address it through programs such as ARPANET.
           </Text>
           <Spacer />
           <Text small> Image Credit - NASA </Text>
@@ -66,11 +62,8 @@ export default function About() {
         >
           <Text h3> The Beginning</Text>
           <Text span>
-            In response to the Soviet Union's advancements in space technology,
-            the United States creates the Advanced Research Projects Agency
-            (ARPA) within the Department of Defense. ARPA's mission is to foster
-            scientific and technological research with potential military
-            applications.
+          In response to the demonstrated space technology the USSR possessed, the US created ARPA, the Advanced Research Projects Agency within its Department of Defense. ARPA's mission is to foster scientific and technological research with potential military applications.
+
           </Text>
         </VerticalTimelineElement>
 
@@ -127,10 +120,7 @@ export default function About() {
         >
           <Text h3> Node One</Text>
           <Text span>
-            Soon, The first ARPANET node is established when BBN successfully
-            connects the computers at the University of California, Los Angeles
-            (UCLA) and the Stanford Research Institute (SRI). This connection is
-            the birth of ARPANET, the precursor to the modern Internet.
+          The first ARPANET node(communication) was established when BBN connceted succesfully computers at UCLA(University of California, Los Angeles) and SRI(Stanford Research Institute). This connection is the birth of ARPANET, the precursor to the modern Internet.
           </Text>
         </VerticalTimelineElement>
 
@@ -142,9 +132,7 @@ export default function About() {
         >
           <Text h3> Information Sharing and Collaboration</Text>
           <Text span>
-            Researchers at the University of Southern California (USC) and
-            Stanford University used ARPANET to collaborate on the development
-            of the ARPANET Network Measurement Center (NMC).
+          Researchers at the USC(University of Southern California) and Stanford University began to use ARPANET together in order to develop the ARPANET Network Measurement Center(NMC).
           </Text>
           <Text>
             "The ARPANET project has successfully shown the feasibility of a
@@ -235,8 +223,7 @@ export default function About() {
           <Spacer />
           <Text span>
             The number of hosts on ARPANET surpasses 1,000, reflecting its
-            expanding user base. The network becomes a vital tool for
-            researchers, scientists, and academics across the United States.
+            expanding user base. This marked the network as a tool across the USA for researchers, scientists, and academics.
           </Text>
           <Spacer />
           <Text span>
@@ -259,13 +246,7 @@ export default function About() {
         >
           <Text h3> The Final Days </Text>
           <Text span>
-            ARPANET was officially decommissioned in 1990. The decommissioning
-            process began in 1989 when the National Science Foundation (NSF),
-            which had taken over the management of the network, decided to
-            transition from ARPANET to the NSFNET (National Science Foundation
-            Network). The NSFNET provided a more robust infrastructure and
-            expanded connectivity. By April 30, 1990, ARPANET ceased to exist as
-            an operational network, marking the end of its service.
+          ARPANET was officially decommissioned in 1990. This process began in 1989 when NSF(National Science Foundation) had taken over the management of the network and decided to switch from ARPANET to NSFNET(National Science Foundation Network). The NSFNET provided a more robust infrastructure and expanded connectivity. By April 30, 1990, ARPANET ceased to exist as an operational network, marking the end of its service.
           </Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -299,8 +280,7 @@ export default function About() {
           />
           <Spacer />
           <Text span>
-            The NSFNET, a backbone network that served as a major component of
-            the Internet infrastructure, is decommissioned. This event marks the
+            The NSFNET is decommissioned. This event marks the
             completion of the transition from a government-funded network to a
             commercially-driven Internet.
           </Text>
