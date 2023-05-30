@@ -15,7 +15,7 @@ const isBrowser = () => typeof window !== "undefined"; //The approach recommende
 
 function scrollDown() {
   if (!isBrowser()) return;
-  window.scrollTo({ top: 800, behavior: "smooth" });
+  window.scrollTo({ top: 780, behavior: "smooth" });
 }
 
 export default function About() {
@@ -101,10 +101,11 @@ export default function About() {
           </Card>
         </Grid>
       </Grid.Container>
-      <Spacer y={3} />
-      <Row justify = "center" align = "center"> Primary Sources : https://docs.google.com/document/d/1uC0oTqMqmowNDD8CXXqVdmrVxtXc5vVv3P2cf5tuGO0</Row>
+      <Spacer y={2} />
+      <Row justify = "center" align = "center"><Card css={{mw:"900px"}}><Row justify = "center" align = "center"> Primary Sources : https://docs.google.com/document/d/1uC0oTqMqmowNDD8CXXqVdmrVxtXc5vVv3P2cf5tuGO0</Row>
       <Row justify = "center" align = "center">Secondary Sources : https://docs.google.com/document/d/150S7rCMJ27EVm0C-t2G4bmEdCRFt72sWvAQ2fiat06k</Row>
-      
+      </Card></Row>
+      <Spacer y={3} />
     </div>
   );
 }
