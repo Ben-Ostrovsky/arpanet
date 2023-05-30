@@ -109,6 +109,12 @@ export default function About() {
             setVis={setVisible2}
           />
         </Row>
+        <Spacer y={1}/>
+        <CardItemText
+          header = {"Program Records"}
+          text={"AAAAAA"}
+          setVis={setVisible3}
+          />
       </Container>
 
       {/* MODAL SETUP BELOW */}
@@ -146,6 +152,32 @@ export default function About() {
         aria-labelledby="n"
         aria-describedby="d"
         {...bindings2}
+      >
+        <Modal.Header>
+          <Text id="n" size={18}>
+            (ARPANET GEOGRAPHIC MAP(1980))
+          </Text>
+        </Modal.Header>
+        <Modal.Body>
+          <Image
+            width={400}
+            height={300}
+            src="https://thisdayintechhistory.com/wp-content/uploads/2012/11/arpanet80.gif"
+          />
+          <Text id="d">
+            This, combined with the prior image, shows how ARPANET continues to
+            expand the reach of the internet which shows how it increased the
+            intertwined nodes/institutions that used it to connect and share
+            information.
+          </Text>
+        </Modal.Body>
+      </Modal>
+      <Modal
+        scroll
+        width="600px"
+        aria-labelledby="n"
+        aria-describedby="d"
+        {...bindings3}
       >
         <Modal.Header>
           <Text id="n" size={18}>
