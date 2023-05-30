@@ -199,21 +199,47 @@ export default function About() {
           </Grid>
           <Grid>
             <Card css={{ mw: "330px" }} variant="shadow">
-              <Card.Header>
-                <Text b>ARPANET MANAGEMENT STUDY</Text>
+              <Card.Header css={{ position: "absolute", zIndex: 1 }}>
+                <Col>
+                  <Text
+                    size={12}
+                    weight="bold"
+                    transform="uppercase"
+                    color="#ffffffAA"
+                  >
+                    ARPANET
+                  </Text>
+                  <Text h4 size={30} color="white">
+                    Management Study
+                  </Text>
+                  <Text size={12} weight="bold" color="white">
+                    "[Arpanet created because of] The need to develop
+                    alternatives for military communication systems having lower
+                    cost, lower delay and higher bandwidth capabilities than
+                    those currently in use, while still providing the end-to-end
+                    security and reliability needed"
+                  </Text>
+                </Col>
               </Card.Header>
+              <Card.Image
+                src="https://pbs.twimg.com/media/ElfloJfW0AMwgiD.jpg"
+                objectFit="cover"
+                width="100%"
+                height={400}
+                css={{ filter: "brightness(70%)" }}
+              />
               <Card.Divider />
-              <Card.Body css={{ height: "290px", py: "$10" }}>
-                <Text>
-                  "[Arpanet created because of] The need to develop alternatives
-                  for military communication systems having lower cost, lower
-                  delay and higher bandwidth capabilities than those currently
-                  in use, while still providing the end-to-end security and
-                  reliability needed"
-                </Text>
-              </Card.Body>
-              <Card.Divider />
-              <Card.Footer>
+              <Card.Footer
+                isBlurred
+                css={{
+                  position: "absolute",
+                  bgBlur: "#ffffff66",
+                  borderTop:
+                    "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
+                  bottom: 0,
+                  zIndex: 1,
+                }}
+              >
                 <Row justify="center" align="center">
                   <Button size="sm" light onPress={() => setVisible3(true)}>
                     Expand
@@ -222,25 +248,49 @@ export default function About() {
               </Card.Footer>
             </Card>
           </Grid>
+
           <Grid>
-            <Card css={{ mw: "330px" }} variant="shadow">
-              <Card.Header>
-                <Text b>
-                  The Arpanet and Its Impact on the State of Networking
-                </Text>
+            <Card css={{ mw: "330px", height: "340px" }} variant="shadow">
+              <Card.Header css={{ position: "absolute", zIndex: 1 }}>
+                <Col>
+                  <Text
+                    size={12}
+                    weight="bold"
+                    transform="uppercase"
+                    color="#ffffffAA"
+                  >
+                    The Arpanet And It's Impact on the
+                  </Text>
+                  <Text size={30} color="white">
+                    State of Networking
+                  </Text>
+                  <Text size={12} weight="bold" color="white">
+                    “We had a meeting with our subcontractor for hardware to
+                    present our complaint to them that nodes were down a half
+                    hour a day. Their reaction was, “You’re down a half hour out
+                    of 24. That’s about 2%. You’re getting 98% uptime..."
+                  </Text>
+                </Col>
               </Card.Header>
+              <Card.Image
+                src="https://brewminate.com/wp-content/uploads/2019/03/031219-76-History-Internet-Technology.jpg"
+                objectFit="cover"
+                width="100%"
+                height={400}
+                css={{ filter: "brightness(70%)" }}
+              />
               <Card.Divider />
-              <Card.Body css={{ height: "290px", py: "$10" }}>
-                <Text>
-                  “We had a meeting with our subcontractor for hardware to
-                  present our complaint to them that nodes were down a half hour
-                  a day. Their reaction was, “You’re down a half hour out of 24.
-                  That’s about 2%. You’re getting 98% uptime. We’ve never gotten
-                  98% uptime on anything we’ve built. How are you doing it?”
-                </Text>
-              </Card.Body>
-              <Card.Divider />
-              <Card.Footer>
+              <Card.Footer
+                isBlurred
+                css={{
+                  position: "absolute",
+                  bgBlur: "#ffffff66",
+                  borderTop:
+                    "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
+                  bottom: 0,
+                  zIndex: 1,
+                }}
+              >
                 <Row justify="center" align="center">
                   <Button size="sm" light onPress={() => setVisible4(true)}>
                     Expand
