@@ -323,11 +323,7 @@ export default function About() {
                     In 1964, Paul Baran published On Distributed Communications,
                     in which he critiqued then existing military communications
                     design as a vulnerable, centralized telecommunications
-                    network. Diagrammed as a spoke model with a hub in the
-                    middle, an enemy could successfully take out a single point
-                    causing the network to fail. Baran advocated that the U.S.
-                    Department of Defense redo their entire communications
-                    system, moving to a decentralized, packet switched design.
+                    network. Diagrammed..."
                   </Text>
                 </Col>
               </Card.Header>
