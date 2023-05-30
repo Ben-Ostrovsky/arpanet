@@ -89,7 +89,15 @@ export default function About() {
           iconStyle={{ background: "#0072F5" }}
           date="1965-1967"
         >
-          <Text h3> ARPANET</Text>
+          <Text h3>ARPANET</Text>
+          <Spacer />
+          <Image
+            src={
+              "https://technicshistory.files.wordpress.com/2019/06/arpanet-e1559361718915.png?w=1088"
+            }
+            width={350}
+          />
+          <Spacer />
           <Text span>
             Lawrence Roberts, an ARPA scientist, publishes a plan for a computer
             network that would allow researchers to share and access resources
@@ -145,6 +153,12 @@ export default function About() {
           date="1972"
         >
           <Text h3> Email: revolutionizing long-distance communication</Text>
+          <Spacer />
+          <Image
+            src={" https://pbs.twimg.com/media/CbnBXdHUkAAq1Wo.jpg"}
+            width={350}
+          />
+          <Spacer />
           <Text span>
             Ray Tomlinson sent the first email message between two
             ARPANET-connected computers, marking a significant milestone in
@@ -171,6 +185,103 @@ export default function About() {
             the potential of networked computing. This demonstration sparks
             interest and excitement about the possibilities of interconnected
             computers.
+          </Text>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          contentStyle={styles}
+          contentArrowStyle={{ borderRight: "10px solid " + styles.background }}
+          iconStyle={{ background: "#9750DD          " }}
+          date="1975-1978"
+        >
+          <Text h3> A Growing Community</Text>
+          <Text span>
+            The number of ARPANET nodes reaches 111, connecting a growing number
+            of institutions and users.
+          </Text>
+          <Text>
+            "By the end of 1975, twenty-nine sites were connected to the
+            ARPANET. This early network is now an operational resource
+            supporting a large and growing research community in the computer
+            science and related disciplines." - Vint Cerf and Robert Kahn, in
+            their 1978 paper on TCP/IP.
+          </Text>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          contentStyle={styles}
+          contentArrowStyle={{ borderRight: "10px solid " + styles.background }}
+          iconStyle={{ background: "#0072F5" }}
+          date="1984-1989"
+        >
+          <Text h3> Success</Text>
+          <Spacer />
+          <Image
+            src={" http://mercury.lcs.mit.edu/~jnc/tech/jpg/ARPANet/G89Apr.jpg"}
+            width={350}
+          />
+          <Spacer />
+          <Text span>
+            The number of hosts on ARPANET surpasses 1,000, reflecting its
+            expanding user base. The network becomes a vital tool for
+            researchers, scientists, and academics across the United States.
+            Other networks inspired by Arpanet, such as MilNet and the World
+            Wide Web, begin to be proposed.
+          </Text>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          contentStyle={styles}
+          contentArrowStyle={{ borderRight: "10px solid " + styles.background }}
+          iconStyle={{ background: "#0072F5" }}
+          date="1991"
+        >
+          <Text h3> The Final Days </Text>
+          <Text span>
+            ARPANET was officially decommissioned in 1990. The decommissioning
+            process began in 1989 when the National Science Foundation (NSF),
+            which had taken over the management of the network, decided to
+            transition from ARPANET to the NSFNET (National Science Foundation
+            Network). The NSFNET provided a more robust infrastructure and
+            expanded connectivity. By April 30, 1990, ARPANET ceased to exist as
+            an operational network, marking the end of its service.
+          </Text>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          contentStyle={styles}
+          contentArrowStyle={{ borderRight: "10px solid " + styles.background }}
+          iconStyle={{ background: "#0072F5" }}
+          date="1991"
+        >
+          <Text h3> Unrestricted: The birth of the open Internet </Text>
+          <Text span>
+            The National Science Foundation lifts restrictions on the commercial
+            use of the Internet. This decision paves the way for the Internet's
+            commercialization and its widespread adoption by businesses and the
+            general public.
+          </Text>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          contentStyle={styles}
+          contentArrowStyle={{ borderRight: "10px solid " + styles.background }}
+          iconStyle={{ background: "#0072F5" }}
+          date="1995"
+        >
+          <Text h3> A New Beginning </Text>
+          <Spacer />
+          <Image
+            src={
+              "https://th-thumbnailer.cdn-si-edu.com/rDLz2qKiySCycofmRRCzGI-qdMc=/fit-in/1600x0/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/201212140131421995-smithsonian-470x251.jpg"
+            }
+            width={350}
+          />
+          <Spacer />
+          <Text span>
+            The NSFNET, a backbone network that served as a major component of
+            the Internet infrastructure, is decommissioned. This event marks the
+            completion of the transition from a government-funded network to a
+            commercially-driven Internet.
           </Text>
         </VerticalTimelineElement>
       </VerticalTimeline>
