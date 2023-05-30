@@ -193,7 +193,9 @@ export default function About() {
               >
                 <Row justify="center" align="center">
                   <Button size="sm" light onPress={() => setVisible2(true)}>
-                    Expand
+                    <Text color="rgba(0, 0, 0, 0.8)" h6>
+                      Expand
+                    </Text>
                   </Button>
                 </Row>
               </Card.Footer>
@@ -370,9 +372,8 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="modal-title" size={18}>
-            Secondary - (The Army is using fake social media feeds to help train
-            soldiers in the most realistic environments imaginable. (Julius
-            Chatters/Army))
+            Secondary - Military Digital Attack Simulation (Julius
+            Chatters/Army)
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -382,9 +383,16 @@ export default function About() {
             src="https://www.c4isrnet.com/resizer/zo-j4tMLNC2ySxMbXKU4ypSE6Fg=/1024x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/archetype/ELWLPDCMNBFY5EA2W5D7V4RQGU.jpg"
           />
           <Text id="modal-description">
-            This shows how ARPANET had a long term impact in the army since it
-            forged the beginnings of the internet that is now being used
-            constantly by the military.
+            Connected networks using TCP technology, which was first implemented
+            by the ARPANET, is still being used today like in this simulation.
+            The implementation of TCP/IP as the standard protocol suite for
+            ARPANET and other interconnected networks laid the groundwork for a
+            robust, scalable, and interoperable network. This standardized
+            protocol became the basis for data transmission and routing across
+            Networks, which STILL powers some military communication today. This
+            is to say that is the 70s-80s , ARPANET allowed the US military
+            (it's only user, aside professors on the project) to be more
+            connected that any other country could at this time.
           </Text>
         </Modal.Body>
       </Modal>
@@ -441,11 +449,19 @@ export default function About() {
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/ARPANET_-_MILNT_Diagram_1984.jpg/1200px-ARPANET_-_MILNT_Diagram_1984.jpg?20170823102338"
           />
           <Text id="d">
+            MilNet, which was the part of the ARPANET internetwork designated
+            for unclassified United States Department of Defense traffic, is
+            shown here in full fledge. With over 100 nodes throughout the entire
+            country, the US was leagues ahead of any country in military
+            communication, a gap that would stay until the Internet went public.
             This illustrates the widespread presence and connectivity of ARPANET
             within the military infrastructure. It showcases the curcial role
             ARPANET had in gaining an advantage through its creation of
-            efficient communication, sharing of resources, and coordination
+            efficient communication, sharing of resources, and safe coordination
             between military institutions and research centers.
+          </Text>
+          <Text b>
+            In many ways, ARPANET was the telegram of the 1970s-90s.
           </Text>
         </Modal.Body>
       </Modal>

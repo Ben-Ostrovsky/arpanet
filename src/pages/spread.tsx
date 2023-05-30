@@ -129,7 +129,7 @@ export default function About() {
           <CardItemText
             header={"Growing Community"}
             text={
-              "“By the end of 1975, twenty-nine sites were connected to the ARPANET. This early network is now an operational resource supporting a large and growing research community in the computer science and related disciplines.”"
+              "“By the end of 1975, twenty-nine sites were connected to the ARPANET. This early network is now an operational resource supporting a large and growing research community in the computer science and related disciplines. -Vint Cerf and Robert Kahn”"
             }
             setVis={setVisible3}
           />
@@ -137,7 +137,7 @@ export default function About() {
           <CardItemText
             header={"The Arpanet and Its Impact on the State of Networking"}
             text={
-              "“I sit down at my desk and I try to log in, and it said, “One prior failed attempt.” I knew that it wasn’t me, but I knew we had logs that kept track. I asked the system administrator to look into it. He identified that the failed attempt came from a military research laboratory on the other side of the country.”"
+              "“I sit down at my desk and I try to log in, and it said, “One prior failed attempt.” I knew that it wasn’t me, but I knew we had logs that kept track. I asked the system administrator to look into it. He identified that the failed attempt came from a military research laboratory on the other side of the country. -STEVE CROCKER”"
             }
             setVis={setVisible4}
           />
@@ -164,12 +164,14 @@ export default function About() {
             src="http://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/7032016/ARPANET.jpg?1477749691"
           />
           <Text id="modal-description">
-            This image visually depicts the expansive network of interconnected
-            ARPANET nodes, which facilitated the spread of information. This map
-            showcases how it cretaed a efficient communication infrastructure
-            which led to the rapid exchange of data and knowledge among diverse
-            institutions and contributing to the acceleration of information
-            dissemination.
+            From the original two university computers roughly a decage earlier,
+            ARPANET has grown masivvely, as can be seen by the sheer quantity of
+            nodes in the presented map. The 1973 map is populated with many
+            houses of academia, all wanting in on the new intercommunications
+            project. Each professor that would join the network would be able to
+            share all of their research and colloborate with other more easily
+            and safely. This is why so many professors gravitated towrds the
+            project.
           </Text>
         </Modal.Body>
       </Modal>
@@ -192,10 +194,14 @@ export default function About() {
             src="https://thisdayintechhistory.com/wp-content/uploads/2012/11/arpanet80.gif"
           />
           <Text id="d">
-            This, combined with the prior image, shows how ARPANET continues to
-            expand the reach of the internet which shows how it increased the
-            intertwined nodes/institutions that used it to connect and share
-            information.
+            By this point, ARPANET is so popular that officials are looking at
+            commercial options. The reason the government project has had such
+            success is because of it's ability to keep over 100 servers of
+            people at the various marked locations up to date with eachother,
+            despite miles of physical distance. Even simular technology, such as
+            phones, could not service to so many individuals at once. The 1980's
+            map shows ARPANETS most busy time befofe it finally gets replaced in
+            1990 officially.
           </Text>
         </Modal.Body>
       </Modal>
@@ -216,9 +222,9 @@ export default function About() {
             “By the end of 1975, twenty-nine sites were connected to the
             ARPANET. This early network is now an operational resource
             supporting a large and growing research community in the computer
-            science and related disciplines.”
+            science and related disciplines.” -Vint Cerf and Robert Kahn
           </Text>
-          <Text id="d">
+          <Text id="d" b>
             The quote highlights ARPANET's pioneering role and expanding
             capabilities in spreading information. By the end of 1975, ARPANET
             connected twenty-nine sites, marking the early stages of a
@@ -242,7 +248,7 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="n" size={18}>
-            (ARPANET GEOGRAPHIC MAP(1980))
+            Primary - Steve Croker (2019)
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -253,7 +259,17 @@ export default function About() {
             He identified that the failed attempt came from a military research
             laboratory on the other side of the country.”
           </Text>
-          <Text id="d">Reason 2</Text>
+          <Text id="d">
+            This quote by Steve Croker, one of the original creators of ARPANET,
+            is the beginning to a longer interview in which he and other ARPANET
+            colleagues disucss the 'dark side' of ARPANET. Croker brings up this
+            point to illustrate that with the spread of information comes both
+            good and bad. People learn how to do good in the world but also
+            learn how to do evil, such as fraud and theft. Croker was shocked to
+            have experienced an attack so early on in ARPANET, and from then on
+            was convinced that ARPANET had the power to unite people and share
+            their ideas: both under good and evil.
+          </Text>
         </Modal.Body>
       </Modal>
     </div>
