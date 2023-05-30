@@ -44,7 +44,7 @@ export default function About() {
               ARPANET proposal and still ongoing today.
             </Text>
           </Collapse>
-          <Collapse title="Affect" expanded>
+          <Collapse title="Effect" expanded>
             <Text>
               The military was significantly impacted by ARPANET, which
               transformed information sharing and transformed military
