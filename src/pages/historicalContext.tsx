@@ -46,7 +46,6 @@ export default function About() {
             }
             width={350}
           />
-          (NASA)
           <Spacer />
           <Text span>
             The Soviet Union launches the satellite Sputnik, marking the
@@ -55,6 +54,8 @@ export default function About() {
             concerns about national security and technological superiority in
             the United States.
           </Text>
+          <Spacer />
+          <Text small> Image Credit - NASA </Text>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -114,6 +115,8 @@ export default function About() {
             Several institutions, including Bolt, Beranek and Newman (BBN),
             submit proposals.{" "}
           </Text>
+          <Spacer />
+          <Text small> Image Credit - Tech History </Text>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -174,6 +177,8 @@ export default function About() {
             user was 'at' some other host rather than being local." - Ray
             Tomlinson, on choosing the @ symbol for email addresses.
           </Text>
+          <Spacer />
+          <Text small> Image Credit - Twming.com </Text>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -242,6 +247,8 @@ export default function About() {
             the Internet, allowing other networks to follow suite. And soon,
             they did.
           </Text>
+          <Spacer />
+          <Text small> Image Credit - personalpages.manchester.ac.uk </Text>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -297,6 +304,8 @@ export default function About() {
             completion of the transition from a government-funded network to a
             commercially-driven Internet.
           </Text>
+          <Spacer />
+          <Text small> Image Credit - thumbnailer.cdn-si-edu </Text>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
