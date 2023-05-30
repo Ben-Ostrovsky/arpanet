@@ -101,7 +101,9 @@ export default function About() {
           </Card>
         </Grid>
       </Grid.Container>
-      <Spacer y={50} />
+      <Spacer y={3} />
+      Primary Sources : https://docs.google.com/document/d/1uC0oTqMqmowNDD8CXXqVdmrVxtXc5vVv3P2cf5tuGO0
+      Secondary Sources : https://docs.google.com/document/d/150S7rCMJ27EVm0C-t2G4bmEdCRFt72sWvAQ2fiat06k
     </div>
   );
 }
