@@ -102,7 +102,7 @@ export default function About() {
           </Card>
         </Grid>
       </Grid.Container>
-      <Spacer y={2} />
+      <Spacer y={1.5} />
       <Row justify="center" align="center">
         <Link
           block
@@ -111,7 +111,7 @@ export default function About() {
         >
           Primary Sources
         </Link>
-        <Spacer x={13} />
+        <Spacer x={16} />
         <Link
           block
           isExternal
