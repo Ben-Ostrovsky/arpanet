@@ -379,8 +379,15 @@ export default function About() {
             src="https://www.c4isrnet.com/resizer/zo-j4tMLNC2ySxMbXKU4ypSE6Fg=/1024x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/archetype/ELWLPDCMNBFY5EA2W5D7V4RQGU.jpg"
           />
           <Text id="modal-description">
-          Like in this image, TCP technology first implemented by ARPANET is still being used in the military. By implementing TCP/IP, ARPANET laid the groundwork for a more scalable and robust network. This standardized protocol became the basis for data transmission and routing across Networks, which STILL powers some military communication today. This is to say that in the 70s-80s , ARPANET allowed the US military (its only user, aside from professors on the project) to be more connected than any other country could at this time. This shows a long term impact of ARPANET.
-
+            Like in this image, TCP technology first implemented by ARPANET is
+            still being used in the military. By implementing TCP/IP, ARPANET
+            laid the groundwork for a more scalable and robust network. This
+            standardized protocol became the basis for data transmission and
+            routing across Networks, which STILL powers some military
+            communication today. This is to say that in the 70s-80s , ARPANET
+            allowed the US military (its only user, aside from professors on the
+            project) to be more connected than any other country could at this
+            time. This shows a long term impact of ARPANET.
           </Text>
         </Modal.Body>
       </Modal>
@@ -394,7 +401,7 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="modal-title" size={18}>
-            Secondary - Cyber Telecom
+            Secondary - Cyber Telecom, 2019
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -427,7 +434,7 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="n" size={18}>
-            Primary - (ARPANET/MILNET GEOGRAPHIC MAP(1984))
+            Primary - ARPANET/MILNET GEOGRAPHIC MAP(1984)
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -463,7 +470,7 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="modal-title" size={18}>
-            Primary - (ARPANET MANAGEMENT STUDY(Paul Baran)(1974))
+            Primary - Baran, Paul. (1974) ARPANET MANAGEMENT STUDY
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -494,7 +501,7 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="modal-title" size={18}>
-            Secondary - (Cyber Telecom, 2019)
+            Secondary - Cyber Telecom, 2019
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -503,7 +510,8 @@ export default function About() {
             of a response to the perceived threat of the Soviet’s launch of
             Sputnik in October of 1957. Buoyed by the efforts of scientists in
             World War II in creating the Atomic Bomb, the ENIAC machine, and
-            breaking the German ENIGMA code, among other monumental inventions"(Weber)
+            breaking the German ENIGMA code, among other monumental
+            inventions"(Weber)
           </Text>
           <Text b id="modal-description">
             In the context of the Cold War, this reason for ARPANET is sensible.
@@ -523,7 +531,7 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="n" size={18}>
-            Primary - (Leonard Kleinrock(2019))
+            Primary - Leonard Kleinrock(2019)
           </Text>
         </Modal.Header>
         <Modal.Body>

@@ -154,7 +154,7 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="modal-title" size={18}>
-            (ARPA Network, Grographic Map(1973))
+            ARPA Network, Grographic Map(1973)
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -184,7 +184,7 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="n" size={18}>
-            (ARPANET GEOGRAPHIC MAP(1980))
+            ARPANET GEOGRAPHIC MAP(1980)
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -248,7 +248,7 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="n" size={18}>
-            Primary - Steve Croker (2019)
+            Primary - Steve Croker(2019)
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -260,7 +260,15 @@ export default function About() {
             laboratory on the other side of the country.”
           </Text>
           <Text id="d">
-          This quote by Steve Croker, one of the original creators of ARPANET, is the beginning to a longer interview in which he and other ARPANET colleagues discuss the 'dark side' of ARPANET. Croker brings up this point to illustrate that with the spread of information comes both good and bad. Croker was shocked to have experienced an attack so early in the phases of ARPANET, and from then on he was convinced that ARPANET had the power to unite people and share their ideas in both good and bad ways. This is the dark side that it brought, the potential for the "spread" of evil.
+            This quote by Steve Croker, one of the original creators of ARPANET,
+            is the beginning to a longer interview in which he and other ARPANET
+            colleagues discuss the 'dark side' of ARPANET. Croker brings up this
+            point to illustrate that with the spread of information comes both
+            good and bad. Croker was shocked to have experienced an attack so
+            early in the phases of ARPANET, and from then on he was convinced
+            that ARPANET had the power to unite people and share their ideas in
+            both good and bad ways. This is the dark side that it brought, the
+            potential for the "spread" of evil.
           </Text>
         </Modal.Body>
       </Modal>

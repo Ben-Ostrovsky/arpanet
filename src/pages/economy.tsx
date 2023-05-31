@@ -73,8 +73,8 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="modal-title" size={18}>
-                      (THE EVOLUTION OF E-COMMERCE INDUSTRY IN THE LAST FEW
-                      YEARS(2018))
+                      THE EVOLUTION OF E-COMMERCE INDUSTRY IN THE LAST FEW
+                      YEARS(2018)
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
@@ -126,7 +126,7 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="n" size={18}>
-                      (INTERNET ECONOMY AS A PERCENTAGE OF 2016 GDP(OECD)(2012))
+                      INTERNET ECONOMY AS A PERCENTAGE OF 2016 GDP(2012). OECD
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
@@ -178,7 +178,7 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="modal-title" size={18}>
-                      (ARPANET MANAGEMENT STUDY(Paul Baran)(1974))
+                      Baran, Paul.(1974) Arpanet Management Study
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
@@ -230,7 +230,7 @@ export default function About() {
                 >
                   <Modal.Header>
                     <Text id="n" size={18}>
-                      (Leonard Kleinrock(2019))
+                      Primary - Leonard Kleinrock(2019)
                     </Text>
                   </Modal.Header>
                   <Modal.Body>
