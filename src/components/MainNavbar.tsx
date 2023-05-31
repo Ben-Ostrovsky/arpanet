@@ -24,9 +24,9 @@ export default function MainNavbar() {
         <Link href={"/"} passHref legacyBehavior>
           <Navbar.Link isActive={router.pathname == "/"}>Home</Navbar.Link>
         </Link>
-        <Link href={"/historicalContext"} passHref legacyBehavior>
-          <Navbar.Link isActive={router.pathname == "/historicalContext"}>
-            Historical Context
+        <Link href={"/timeline"} passHref legacyBehavior>
+          <Navbar.Link isActive={router.pathname == "/timeline"}>
+            Timeline
           </Navbar.Link>
         </Link>
         <Link href={"/military"} passHref legacyBehavior>

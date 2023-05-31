@@ -29,7 +29,7 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>HC | Arpanet</title>
+        <title>Timeline | Arpanet</title>
       </Head>
       <VerticalTimeline lineColor="#697177">
         <VerticalTimelineElement
