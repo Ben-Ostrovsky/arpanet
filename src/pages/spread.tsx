@@ -109,7 +109,7 @@ export default function About() {
           today.
         </Text>
         <Spacer />
-        <Row justify="center" align="Center">
+        <Row justify="center" align="center">
           <Grid.Container gap={2} justify="center" alignContent="center">
             <Grid>
               <CardItemImage
