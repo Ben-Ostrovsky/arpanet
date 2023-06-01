@@ -3,7 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { Text, Image, Spacer } from "@nextui-org/react";
+import { Text, Image, Spacer, Link } from "@nextui-org/react";
 import "react-vertical-timeline-component/style.min.css";
 import Head from "next/head";
 
@@ -48,7 +48,11 @@ export default function About() {
           />
           <Spacer />
           <Text span>
-            The Soviet Union launched Sputnik, the beginning of the Space Race between the USA and USSR. As USSR launched first, it grew discontent within the public about the US's superiority, leading them to address it through programs such as ARPANET.
+            The Soviet Union launched Sputnik, the beginning of the Space Race
+            between the USA and USSR. As USSR launched first, it grew discontent
+            within the public about the US's superiority. This was a major
+            defeat in the growing technological race, and Eisenhower, the
+            serving President at the time, knew that the US had to act quickly.
           </Text>
           <Spacer />
           <Text small> Image Credit - NASA </Text>
@@ -62,9 +66,27 @@ export default function About() {
         >
           <Text h3> The Beginning</Text>
           <Text span>
-          In response to the demonstrated space technology the USSR possessed, the US created ARPA, the Advanced Research Projects Agency within its Department of Defense. ARPA's mission is to foster scientific and technological research with potential military applications.
-
+            In response to the demonstrated space technology the USSR possessed,
+            the US created ARPA, the Advanced Research Projects Agency within
+            its Department of Defense. ARPA's mission is to foster scientific
+            and technological research with potential military applications.
+            <Spacer />
+            In his farewell address, Eisenhower stated
           </Text>
+          <Text size="$lg">
+            "We should take nothing for granted only an alert and knowledgeable
+            citizenry can compel the proper meshing of the huge industrial and
+            military machinery of defense with our peaceful methods and goals,
+            so that security and liberty may prosper together.{" "}
+            <Spacer y={0.5} />
+            Akin to, and largely responsible for the sweeping changes in our
+            industrial-military posture, has been the technological revolution
+            during recent decades. In this revolution, research has become
+            central; it also becomes more formalized, complex, and costly. A
+            steadily increasing share is conducted for, by, or at the direction
+            of, the Federal government."
+          </Text>
+          <Text small>Dwight D. Eisenhower</Text>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -78,8 +100,16 @@ export default function About() {
             J.C.R. Licklider becomes the first director of ARPA's Information
             Processing Techniques Office (IPTO). Licklider envisions a "galactic
             network" that connects computers and facilitates collaboration among
-            researchers.
+            researchers, making collaborative work much easier.
           </Text>
+          <Text>
+            “If such a network as I envisage nebulously could be brought into
+            operation, we would have at least four large computers, perhaps six
+            or eight small computers, and a great assortment of disc files and
+            magnetic tape units—not to mention the remote consoles and teletype
+            stations—all churning away.”{" "}
+          </Text>
+          <Text small> J.C.R Licklider</Text>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -104,9 +134,15 @@ export default function About() {
           </Text>
           <Spacer />
           <Text span>
-            Soon, ARPA issues a Request for Quotation (RFQ) to build ARPANET.
-            Several institutions, including Bolt, Beranek and Newman (BBN),
-            submit proposals.{" "}
+            Soon, ARPA issues a{" "}
+            <Link
+              isExternal
+              href="https://historyofcomputercommunications.info/assets/pdf/arpanet-rfq.pdf"
+            >
+              Request for Quotation
+            </Link>{" "}
+            to build ARPANET. Several institutions, including Bolt, Beranek and
+            Newman (BBN), submit proposals.{" "}
           </Text>
           <Spacer />
           <Text small> Image Credit - Tech History </Text>
@@ -120,32 +156,37 @@ export default function About() {
         >
           <Text h3> Node One</Text>
           <Text span>
-          The first ARPANET node(communication) was established when BBN connceted succesfully computers at UCLA(University of California, Los Angeles) and SRI(Stanford Research Institute). This connection is the birth of ARPANET, the precursor to the modern Internet.
+            The first ARPANET node(communication) was established when BBN
+            connceted succesfully computers at UCLA(University of California,
+            Los Angeles) and SRI(Stanford Research Institute). This connection
+            is the birth of ARPANET, the precursor to the modern Internet.
           </Text>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           contentStyle={styles}
           contentArrowStyle={{ borderRight: "10px solid " + styles.background }}
-          iconStyle={{ background: "#9750DD          " }}
+          iconStyle={{ background: "#0072F5" }}
           date="1971"
         >
           <Text h3> Information Sharing and Collaboration</Text>
           <Text span>
-          Researchers at the USC(University of Southern California) and Stanford University began to use ARPANET together in order to develop the ARPANET Network Measurement Center(NMC).
+            Researchers at the USC(University of Southern California) and
+            Stanford University began to use ARPANET together in order to
+            develop the ARPANET Network Measurement Center(NMC).
           </Text>
           <Text>
             "The ARPANET project has successfully shown the feasibility of a
             network of computers, connected to one another by medium- and
-            high-speed communication links." - Lawrence Roberts, ARPA scientist,
-            in a 1967 paper.
+            high-speed communication links."{" "}
           </Text>
+          <Text small> Lawrence Roberts, ARPA scientist, in a 1967 paper.</Text>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           contentStyle={styles}
           contentArrowStyle={{ borderRight: "10px solid " + styles.background }}
-          iconStyle={{ background: "#9750DD          " }}
+          iconStyle={{ background: "#0072F5" }}
           date="1972"
         >
           <Text h3> Email: revolutionizing long-distance communication</Text>
@@ -189,7 +230,7 @@ export default function About() {
         <VerticalTimelineElement
           contentStyle={styles}
           contentArrowStyle={{ borderRight: "10px solid " + styles.background }}
-          iconStyle={{ background: "#9750DD          " }}
+          iconStyle={{ background: "#0072F5" }}
           date="1975-1978"
         >
           <Text h3> A Growing Community</Text>
@@ -223,7 +264,8 @@ export default function About() {
           <Spacer />
           <Text span>
             The number of hosts on ARPANET surpasses 1,000, reflecting its
-            expanding user base. This marked the network as a tool across the USA for researchers, scientists, and academics.
+            expanding user base. This marked the network as a tool across the
+            USA for researchers, scientists, and academics.
           </Text>
           <Spacer />
           <Text span>
@@ -246,7 +288,13 @@ export default function About() {
         >
           <Text h3> The Final Days </Text>
           <Text span>
-          ARPANET was officially decommissioned in 1990. This process began in 1989 when NSF(National Science Foundation) had taken over the management of the network and decided to switch from ARPANET to NSFNET(National Science Foundation Network). The NSFNET provided a more robust infrastructure and expanded connectivity. By April 30, 1990, ARPANET ceased to exist as an operational network, marking the end of its service.
+            ARPANET was officially decommissioned in 1990. This process began in
+            1989 when NSF(National Science Foundation) had taken over the
+            management of the network and decided to switch from ARPANET to
+            NSFNET(National Science Foundation Network). The NSFNET provided a
+            more robust infrastructure and expanded connectivity. By April 30,
+            1990, ARPANET ceased to exist as an operational network, marking the
+            end of its service.
           </Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -280,13 +328,16 @@ export default function About() {
           />
           <Spacer />
           <Text span>
-            The NSFNET is decommissioned. This event marks the
-            completion of the transition from a government-funded network to a
-            commercially-driven Internet.
+            The NSFNET is decommissioned. This event marks the completion of the
+            transition from a government-funded network to a commercially-driven
+            Internet.
           </Text>
           <Spacer />
           <Text small> Image Credit - thumbnailer.cdn-si-edu </Text>
         </VerticalTimelineElement>
+        <VerticalTimelineElement
+          iconStyle={{ background: "#17C964          " }}
+        ></VerticalTimelineElement>
       </VerticalTimeline>
     </div>
   );
