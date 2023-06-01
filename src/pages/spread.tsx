@@ -9,6 +9,7 @@ import {
   Button,
   Image,
   Spacer,
+  Grid,
 } from "@nextui-org/react";
 import Head from "next/head";
 import React from "react";
@@ -80,6 +81,7 @@ export default function About() {
   const { setVisible: setVisible2, bindings: bindings2 } = useModal();
   const { setVisible: setVisible3, bindings: bindings3 } = useModal();
   const { setVisible: setVisible4, bindings: bindings4 } = useModal();
+  const { setVisible: setVisible5, bindings: bindings5 } = useModal();
 
   return (
     <div>
@@ -107,44 +109,84 @@ export default function About() {
           today.
         </Text>
         <Spacer />
-        <Row justify="center" align="center">
-          <CardItemImage
-            header={"Geographic Map"}
-            imgURL={
-              "http://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/7032016/ARPANET.jpg?1477749691"
-            }
-            setVis={setVisible}
-          />
 
-          <Spacer x={2} />
+        <Grid.Container gap={2}>
+          <Grid>
+            <CardItemImage
+              header={"Geographic Map"}
+              imgURL={
+                "http://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/7032016/ARPANET.jpg?1477749691"
+              }
+              setVis={setVisible}
+            />
+          </Grid>
+          <Grid>
+            <CardItemImage
+              header={"GEOGRAPHIC MAP"}
+              imgURL={
+                "https://thisdayintechhistory.com/wp-content/uploads/2012/11/arpanet80.gif"
+              }
+              setVis={setVisible2}
+            />
+          </Grid>
+          <Grid>
+            <CardItemText
+              header={"Growing Community"}
+              text={
+                "“By the end of 1975, twenty-nine sites were connected to the ARPANET. This early network is now an operational resource supporting a large and growing research community in the computer science and related disciplines. -Vint Cerf and Robert Kahn”"
+              }
+              setVis={setVisible3}
+            />
+          </Grid>
+          <Grid>
+            <CardItemText
+              header={"The Arpanet and Its Impact on the State of Networking"}
+              text={
+                "“I sit down at my desk and I try to log in, and it said, “One prior failed attempt.” I knew that it wasn’t me, but I knew we had logs that kept track. I asked the system administrator to look into it. He identified that the failed attempt came from a military research laboratory on the other side of the country. -STEVE CROCKER”"
+              }
+              setVis={setVisible4}
+            />
 
-          <CardItemImage
-            header={"GEOGRAPHIC MAP"}
-            imgURL={
-              "https://thisdayintechhistory.com/wp-content/uploads/2012/11/arpanet80.gif"
-            }
-            setVis={setVisible2}
-          />
-          <Spacer x={2} />
-          <CardItemText
-            header={"Growing Community"}
-            text={
-              "“By the end of 1975, twenty-nine sites were connected to the ARPANET. This early network is now an operational resource supporting a large and growing research community in the computer science and related disciplines. -Vint Cerf and Robert Kahn”"
-            }
-            setVis={setVisible3}
-          />
-          <Spacer x={2} />
-          <CardItemText
-            header={"The Arpanet and Its Impact on the State of Networking"}
-            text={
-              "“I sit down at my desk and I try to log in, and it said, “One prior failed attempt.” I knew that it wasn’t me, but I knew we had logs that kept track. I asked the system administrator to look into it. He identified that the failed attempt came from a military research laboratory on the other side of the country. -STEVE CROCKER”"
-            }
-            setVis={setVisible4}
-          />
-        </Row>
+            <Grid>
+              <CardItemText
+                header={"Quote"}
+                text={
+                  "In the early days of the military Arpanet, my daughter was studying in Nicaragua. Because the U.S. was essentially at war with them, contact was difficult. I managed to use MIT's Arpanet connection, and she found one, so we could communicate thanks to the Pentagon! -Noam Chomsky"
+                }
+                setVis={setVisible5}
+              />
+            </Grid>
+          </Grid>
+        </Grid.Container>
       </Container>
 
       {/* MODAL SETUP BELOW */}
+      <Modal
+        scroll
+        width="600px"
+        aria-labelledby="modal-title"
+        aria-describedby="modal-description"
+        {...bindings5}
+      >
+        <Modal.Header>
+          <Text id="modal-title" size={18}>
+            Quote by Noam Chomsky
+          </Text>
+        </Modal.Header>
+        <Modal.Body>
+          <Image
+            width={400}
+            height={300}
+            src="http://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/7032016/ARPANET.jpg?1477749691"
+          />
+          <Text id="modal-description">
+            In the early days of the military Arpanet, my daughter was studying
+            in Nicaragua. Because the U.S. was essentially at war with them,
+            contact was difficult. I managed to use MIT's Arpanet connection,
+            and she found one, so we could communicate thanks to the Pentagon!
+          </Text>
+        </Modal.Body>
+      </Modal>
       <Modal
         scroll
         width="600px"
@@ -163,16 +205,7 @@ export default function About() {
             height={300}
             src="http://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/7032016/ARPANET.jpg?1477749691"
           />
-          <Text id="modal-description">
-            From the original two university computers roughly a decage earlier,
-            ARPANET has grown masivvely, as can be seen by the sheer quantity of
-            nodes in the presented map. The 1973 map is populated with many
-            houses of academia, all wanting in on the new intercommunications
-            project. Each professor that would join the network would be able to
-            share all of their research and colloborate with other more easily
-            and safely. This is why so many professors gravitated towrds the
-            project.
-          </Text>
+          <Text id="modal-description">ARPANET</Text>
         </Modal.Body>
       </Modal>
       <Modal
