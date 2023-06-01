@@ -160,7 +160,7 @@ export default function About() {
                 encouraged to provide the additional capacity that ARPA and new
                 governmental applications will be seeking from this present
                 ARPANET, rather than permit an open-ended expansion of the
-                ARPANET communications network..”{" "}
+                ARPANET communications network.”{" "}
               </Text>
             </Card.Body>
             <Card.Divider />
@@ -186,7 +186,9 @@ export default function About() {
                       "We recommend that the commercial packet switching
                       industry be encouraged to provide the additional capacity
                       that ARPA and new governmental applications will be
-                      seeking from this present ARPANET..”{" "}
+                      seeking from this present ARPANET, rather than permit an
+                      open-ended expansion of the ARPANET communications
+                      network.”
                     </Text>
                     <Text id="modal-description">
                       Even in the earlier stages of ARPANET, Baran was already

@@ -46,15 +46,17 @@ export default function About() {
           </Collapse>
           <Collapse title="Effect" expanded>
             <Text>
-              The military was significantly impacted by ARPANET, which
-              transformed information sharing and transformed military
-              operations. It pioneered a robust and decentralized network that
-              improved the military's capacity for the swift and secure sharing
-              of vital information. ARPANET allowed a method to command/control
-              operations so as to have them be more efficient, and allow
-              real-time coordination and decision-making across separate
-              units.The secure military networks and protocols that were
-              developed as a result of this network are still in use today
+              ARPANET was a new frontier for military technology, a pioneer so
+              far ahead of the peer technologies of it's time that it seemed
+              nearly otherworldly. The military was significantly impacted by
+              ARPANET, which transformed information sharing and transformed
+              military operations. It pioneered a robust and decentralized
+              network that improved the military's capacity for the swift and
+              secure sharing of vital information. ARPANET allowed a method to
+              command/control operations so as to have them be more efficient,
+              and allow real-time coordination and decision-making across
+              separate units.The secure military networks and protocols that
+              were developed as a result of this network are still in use today
               ARPANET served as the basis for the building of sophisticated
               military communication systems.ARPANET also sped up the
               development of technologies that are now crucial to contemporary
@@ -543,11 +545,12 @@ export default function About() {
             we’ve built. How are you doing it?”
           </Text>
           <Text id="d">
-            This shows how it was a breakthrough for the miilitary. Their
-            subcontractor, ARPA(government agency) shows it's importance since
-            as stated their was nothing like it before, so having it available
-            for anytime would be a breakthrough for the communication aspect of
-            the army.
+            Despite Kleinrock's innitial doubts about the project, ARPANET was a
+            complete pioneer in the technological field for the military.
+            ARPANET's subcontractor (the US military at this time) had no
+            technology close to the capabilities of ARPANET when it's system's
+            where being appropriated for the MILNET (the military branch of
+            ARPANET). It was a technological breakthrough.
           </Text>
         </Modal.Body>
       </Modal>
