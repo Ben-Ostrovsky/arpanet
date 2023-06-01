@@ -109,55 +109,56 @@ export default function About() {
           today.
         </Text>
         <Spacer />
-
-        <Grid.Container gap={2} justify="center" alignContent="center">
-          <Grid>
-            <CardItemImage
-              header={"Geographic Map"}
-              imgURL={
-                "http://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/7032016/ARPANET.jpg?1477749691"
-              }
-              setVis={setVisible}
-            />
-          </Grid>
-          <Grid>
-            <CardItemImage
-              header={"GEOGRAPHIC MAP"}
-              imgURL={
-                "https://thisdayintechhistory.com/wp-content/uploads/2012/11/arpanet80.gif"
-              }
-              setVis={setVisible2}
-            />
-          </Grid>
-          <Grid>
-            <CardItemText
-              header={"Growing Community"}
-              text={
-                "“By the end of 1975, twenty-nine sites were connected to the ARPANET. This early network is now an operational resource supporting a large and growing research community in the computer science and related disciplines. -Vint Cerf and Robert Kahn”"
-              }
-              setVis={setVisible3}
-            />
-          </Grid>
-          <Grid>
-            <CardItemText
-              header={"The Arpanet and Its Impact on the State of Networking"}
-              text={
-                "“I sit down at my desk and I try to log in, and it said, “One prior failed attempt.” I knew that it wasn’t me, but I knew we had logs that kept track. I asked the system administrator to look into it. He identified that the failed attempt came from a military research laboratory on the other side of the country. -STEVE CROCKER”"
-              }
-              setVis={setVisible4}
-            />
-
+        <Row justify="center" align="Center">
+          <Grid.Container gap={2} justify="center" alignContent="center">
             <Grid>
-              <CardItemText
-                header={"Quote"}
-                text={
-                  "In the early days of the military Arpanet, my daughter was studying in Nicaragua. Because the U.S. was essentially at war with them, contact was difficult. I managed to use MIT's Arpanet connection, and she found one, so we could communicate thanks to the Pentagon! -Noam Chomsky"
+              <CardItemImage
+                header={"Geographic Map"}
+                imgURL={
+                  "http://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/7032016/ARPANET.jpg?1477749691"
                 }
-                setVis={setVisible5}
+                setVis={setVisible}
               />
             </Grid>
-          </Grid>
-        </Grid.Container>
+            <Grid>
+              <CardItemImage
+                header={"GEOGRAPHIC MAP"}
+                imgURL={
+                  "https://thisdayintechhistory.com/wp-content/uploads/2012/11/arpanet80.gif"
+                }
+                setVis={setVisible2}
+              />
+            </Grid>
+            <Grid>
+              <CardItemText
+                header={"Growing Community"}
+                text={
+                  "“By the end of 1975, twenty-nine sites were connected to the ARPANET. This early network is now an operational resource supporting a large and growing research community in the computer science and related disciplines. -Vint Cerf and Robert Kahn”"
+                }
+                setVis={setVisible3}
+              />
+            </Grid>
+            <Grid>
+              <CardItemText
+                header={"The Arpanet and Its Impact on the State of Networking"}
+                text={
+                  "“I sit down at my desk and I try to log in, and it said, “One prior failed attempt.” I knew that it wasn’t me, but I knew we had logs that kept track. I asked the system administrator to look into it. He identified that the failed attempt came from a military research laboratory on the other side of the country. -STEVE CROCKER”"
+                }
+                setVis={setVisible4}
+              />
+
+              <Grid>
+                <CardItemText
+                  header={"Quote"}
+                  text={
+                    "In the early days of the military Arpanet, my daughter was studying in Nicaragua. Because the U.S. was essentially at war with them, contact was difficult. I managed to use MIT's Arpanet connection, and she found one, so we could communicate thanks to the Pentagon! -Noam Chomsky"
+                  }
+                  setVis={setVisible5}
+                />
+              </Grid>
+            </Grid>
+          </Grid.Container>
+        </Row>
       </Container>
 
       {/* MODAL SETUP BELOW */}
