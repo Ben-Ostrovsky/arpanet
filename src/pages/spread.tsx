@@ -174,11 +174,6 @@ export default function About() {
           </Text>
         </Modal.Header>
         <Modal.Body>
-          <Image
-            width={400}
-            height={300}
-            src="http://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/7032016/ARPANET.jpg?1477749691"
-          />
           <Text id="modal-description">
             In the early days of the military Arpanet, my daughter was studying
             in Nicaragua. Because the U.S. was essentially at war with them,
