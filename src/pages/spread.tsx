@@ -110,7 +110,7 @@ export default function About() {
         </Text>
         <Spacer />
 
-        <Grid.Container gap={2}>
+        <Grid.Container gap={2} justify="center" alignContent="center">
           <Grid>
             <CardItemImage
               header={"Geographic Map"}
