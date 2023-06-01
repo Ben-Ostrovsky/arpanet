@@ -205,7 +205,16 @@ export default function About() {
             height={300}
             src="http://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/7032016/ARPANET.jpg?1477749691"
           />
-          <Text id="modal-description">ARPANET</Text>
+          <Text id="modal-description">
+            From the original two university computers roughly a decage earlier,
+            ARPANET has grown masivvely, as can be seen by the sheer quantity of
+            nodes in the presented map. The 1973 map is populated with many
+            houses of academia, all wanting in on the new intercommunications
+            project. Each professor that would join the network would be able to
+            share all of their research and colloborate with other more easily
+            and safely. This is why so many professors gravitated towrds the
+            project.
+          </Text>
         </Modal.Body>
       </Modal>
       <Modal

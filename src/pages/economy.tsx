@@ -9,6 +9,7 @@ import {
   Button,
   Image,
   Spacer,
+  Grid,
 } from "@nextui-org/react";
 import Head from "next/head";
 import React from "react";
@@ -23,6 +24,7 @@ export default function About() {
         <title>Economy | Arpanet</title>
       </Head>
       <Container>
+        <Grid.Container></Grid.Container>
         <Row justify="center" align="center">
           <Text color="#85bb65" h1>
             Economy
