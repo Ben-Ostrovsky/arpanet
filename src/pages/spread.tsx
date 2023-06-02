@@ -171,7 +171,7 @@ export default function About() {
       >
         <Modal.Header>
           <Text id="modal-title" size={18}>
-            Quote by Noam Chomsky
+            Quote by Noam Chomsky, A-zquotes.com
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -180,6 +180,17 @@ export default function About() {
             in Nicaragua. Because the U.S. was essentially at war with them,
             contact was difficult. I managed to use MIT's Arpanet connection,
             and she found one, so we could communicate thanks to the Pentagon!
+          </Text>
+          <Spacer />
+          <Text b>
+            {" "}
+            While prior technology such as phone calls could be compromised by
+            governments listening to the line, ARPANET completely revolutionized
+            the way individuals could communicate, as it provided a secure way
+            for the spread of information. In this way ARPANET was a new
+            frontier for communication - individuals could now communicate all
+            across the world (given there was a computer on both ends) using
+            secure packets that where extremely difficult to intercept.{" "}
           </Text>
         </Modal.Body>
       </Modal>
